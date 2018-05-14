@@ -1,19 +1,7 @@
 #Internal package file, do not edit.
-#Fri May 11 11:27:32 ADT 2018
-1.base=C\:\\Users\\user\\androidRepos\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\29
-2.path=classes.dex
+#Mon May 14 11:31:26 ADT 2018
 0.baseType=DIRECTORY
-3.baseType=DIRECTORY
-2.base=C\:\\Users\\user\\androidRepos\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\31
-3.set=DEX
-2.set=DEX
-1.baseType=DIRECTORY
-3.path=classes.dex
-count=4
-1.set=DEX
+0.base=C\:\\Users\\user\\androidRepos\\android-BLE\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 0.path=classes.dex
-3.base=C\:\\Users\\user\\androidRepos\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\30
 0.set=DEX
-0.base=C\:\\Users\\user\\androidRepos\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\28
-2.baseType=DIRECTORY
-1.path=classes.dex
+count=1

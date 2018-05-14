@@ -1,13 +1,4 @@
-#Mon May 14 10:12:51 ADT 2018
-path.3=classes.dex
-path.2=classes.dex
-path.1=classes.dex
+#Mon May 14 11:31:26 ADT 2018
+base.0=C\:\\Users\\user\\androidRepos\\android-BLE\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
-renamed.1=classes2.dex
 renamed.0=classes.dex
-base.3=C\:\\Users\\user\\androidRepos\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\28
-base.2=C\:\\Users\\user\\androidRepos\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\31
-base.1=C\:\\Users\\user\\androidRepos\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\29
-base.0=C\:\\Users\\user\\androidRepos\\android-BluetoothLeGatt-master\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\30
