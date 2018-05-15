@@ -32,6 +32,7 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -47,10 +48,6 @@ public class BluetoothLeService extends Service {
     private String mBluetoothDeviceAddress;
     private BluetoothGatt mBluetoothGatt;
 
-    //Ian Smith 05/10/18
-    BluetoothGattCharacteristic characteristic;
-    //boolean enabled;
-    //
     private int mConnectionState = STATE_DISCONNECTED;
 
     private static final int STATE_DISCONNECTED = 0;
@@ -386,4 +383,5 @@ public class BluetoothLeService extends Service {
         Log.d(TAG, "changeUartComms: Error retrieving Rx channel");
         return false;
     }
+
 }
