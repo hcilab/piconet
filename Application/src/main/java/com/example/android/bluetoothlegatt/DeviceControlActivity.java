@@ -16,7 +16,7 @@
 
 package com.example.android.bluetoothlegatt;
 
-import android.app.Activity;
+import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
 import android.content.BroadcastReceiver;
@@ -27,11 +27,8 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -41,13 +38,11 @@ import android.widget.ExpandableListView;
 import android.widget.SimpleExpandableListAdapter;
 import android.widget.TextView;
 import android.widget.Button;
+import android.widget.Toast;
 
-import java.io.FileDescriptor;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.UUID;
 
 /**
  * For a given BLE device, this Activity provides the user interface to connect, display data,
@@ -55,7 +50,7 @@ import java.util.UUID;
  * communicates with {@code BluetoothLeService}, which in turn interacts with the
  * Bluetooth LE API.
  */
-public class DeviceControlActivity extends FragmentActivity {
+public class DeviceControlActivity extends FragmentActivity implements BluetoothDialogFragment.OnDeviceSelectedListener{
     private final static String TAG = DeviceControlActivity.class.getSimpleName();
 
     public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
@@ -76,7 +71,14 @@ public class DeviceControlActivity extends FragmentActivity {
     private final String LIST_NAME = "NAME";
     private final String LIST_UUID = "UUID";
 
-    private static bluetoothDialogFragment btFragment;
+    private static BluetoothDialogFragment btFragment;
+
+    public void onDeviceSelected(BluetoothDevice bluetoothDevice){
+        String deviceName = bluetoothDevice.getName();
+        String deviceAddress = bluetoothDevice.getAddress();
+        Toast.makeText(this, deviceName+" at address: "+deviceAddress+" clicked", Toast.LENGTH_SHORT).show();
+
+    }
 
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
@@ -237,7 +239,7 @@ public class DeviceControlActivity extends FragmentActivity {
                 mBluetoothLeService.disconnect();
                 return true;
             case R.id.menu_scan:
-                btFragment = new bluetoothDialogFragment();
+                btFragment = new BluetoothDialogFragment();
                 btFragment.show(getSupportFragmentManager(), "Bluetooth");
                 return true;
             case android.R.id.home:
@@ -369,5 +371,14 @@ public class DeviceControlActivity extends FragmentActivity {
                 commButton.setText("Start Uart Comms");
             }
         }*/
+    }
+
+    public void reScanDevices(View v){
+        if (btFragment != null) {
+            // If article frag is available, we're in two-pane layout...
+
+            // Call a method in the ArticleFragment to update its content
+            btFragment.reScan();
+        }
     }
 }

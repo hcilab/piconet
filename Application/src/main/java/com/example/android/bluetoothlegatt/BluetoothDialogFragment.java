@@ -17,17 +17,22 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class bluetoothDialogFragment extends android.support.v4.app.DialogFragment {
+public class BluetoothDialogFragment extends android.support.v4.app.DialogFragment {
     private LeDeviceListAdapter2 mLeDeviceListAdapter;
     private BluetoothAdapter mBluetoothAdapter;
     private boolean mScanning;
     private Handler mHandler;
+    View rootView;
 
     private static final int REQUEST_ENABLE_BT = 1;
     // Stops scanning after 10 seconds.
@@ -35,9 +40,19 @@ public class bluetoothDialogFragment extends android.support.v4.app.DialogFragme
     private static final int PERMISSION_REQUEST_COARSE_LOCATION = 17;
     private Context mContext;
 
+    OnDeviceSelectedListener mCallback;
+
+    // Container Activity must implement this interface
+    public interface OnDeviceSelectedListener {
+        public void onDeviceSelected(BluetoothDevice bluetoothDevice);
+    }
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        LayoutInflater layoutInflater
+                = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View rootView =layoutInflater.inflate(R.layout.bluetooth_dialog_fragment,null);
 
         mHandler = new Handler();
 
@@ -57,25 +72,36 @@ public class bluetoothDialogFragment extends android.support.v4.app.DialogFragme
             dismiss();
         }
 
-        mLeDeviceListAdapter = new LeDeviceListAdapter2(getActivity());
+        mLeDeviceListAdapter = new LeDeviceListAdapter2(mContext);
         scanLeDevice(true);
 
-        builder.setTitle(R.string.dialog_title)
-                /*.setItems(R.array.colors_array, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // The 'which' argument contains the index position
-                        // of the selected item
-                    }
-                })
-                // Set the action buttons
-                .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
-                        // User clicked OK, so save the mSelectedItems results somewhere
-                        // or return them to the component that opened the dialog
+        ListView listView = (ListView) rootView.findViewById(R.id.device_list);
+        listView.setAdapter(mLeDeviceListAdapter);
 
-                    }
-                })*/
+        builder.setView(rootView);
+
+        listView.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                final BluetoothDevice device = mLeDeviceListAdapter.getDevice(position);
+                if (device == null)
+                    Log.d("BLEdialog","Null device");
+                else {
+                    mCallback.onDeviceSelected(device);
+                }
+
+                if (mScanning) {
+                    mBluetoothAdapter.stopLeScan(mLeScanCallback);
+                    mScanning = false;
+                }
+
+            }
+        });
+
+        /*
+        builder.setTitle(R.string.dialog_title)
+
                 .setNeutralButton(R.string.menu_scan, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
@@ -105,13 +131,33 @@ public class bluetoothDialogFragment extends android.support.v4.app.DialogFragme
                 }
             }
         });
+        */
+
         return builder.create();
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        rootView = inflater.inflate(R.layout.bluetooth_dialog_fragment, container, false);
+        return rootView;
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         mContext = context;
+
+        // This makes sure that the container activity has implemented
+        // the callback interface. If not, it throws an exception
+        try {
+            mCallback = (OnDeviceSelectedListener) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString()
+                    + " must implement OnHeadlineSelectedListener");
+        }
+
     }
 
     @Override
@@ -147,7 +193,12 @@ public class bluetoothDialogFragment extends android.support.v4.app.DialogFragme
 
                 @Override
                 public void onLeScan(final BluetoothDevice device, int rssi, byte[] scanRecord) {
-                    ((Activity)mContext).runOnUiThread(new Runnable() {
+                    if(mContext == null) {
+                        //TODO: debug this section
+                        //mContext = getActivity();
+                        dismiss();
+                    }
+                    ((Activity) mContext).runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
                             mLeDeviceListAdapter.addDevice(device);
@@ -156,4 +207,10 @@ public class bluetoothDialogFragment extends android.support.v4.app.DialogFragme
                     });
                 }
             };
+
+    public void reScan(){
+        Button scanButton = (Button) rootView.findViewById(R.id.scan_button);
+        mLeDeviceListAdapter.clear();
+        scanLeDevice(true);
+    }
 }

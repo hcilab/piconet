@@ -9,17 +9,18 @@
         <TextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
-            android:layout_height="100px"
+            android:layout_height="wrap_content"
             android:textSize="20dp"
             android:text="Connect To A Device"/>
 
         <Button
             android:id="@+id/scan_button"
-            android:layout_width="100px"
+            android:layout_width="200px"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:text=" Scan " />
+            android:text=" Scan "
+            android:onClick="reScanDevices"/>
     </RelativeLayout>
     <ListView
         android:id="@+id/device_list"
