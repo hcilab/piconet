@@ -68,7 +68,7 @@ public class BluetoothDialogFragment extends android.support.v4.app.DialogFragme
 
         // Checks if Bluetooth is supported on the device.
         if (mBluetoothAdapter == null) {
-            Toast.makeText(getActivity(), R.string.error_bluetooth_not_supported, Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, R.string.error_bluetooth_not_supported, Toast.LENGTH_SHORT).show();
             dismiss();
         }
 
@@ -95,43 +95,9 @@ public class BluetoothDialogFragment extends android.support.v4.app.DialogFragme
                     mBluetoothAdapter.stopLeScan(mLeScanCallback);
                     mScanning = false;
                 }
-
+                //dismiss();
             }
         });
-
-        /*
-        builder.setTitle(R.string.dialog_title)
-
-                .setNeutralButton(R.string.menu_scan, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
-                        // User clicked rescan, so save the mSelectedItems results somewhere
-                        // or return them to the component that opened the dialog
-                        mLeDeviceListAdapter.clear();
-                        scanLeDevice(true);
-                    }
-                })
-                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int id) {
-
-                    }
-                });
-        builder.setAdapter(mLeDeviceListAdapter, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                final BluetoothDevice device = mLeDeviceListAdapter.getDevice(i);
-                if (device == null)
-                    Log.d("BLEdialog","Null device");
-                String deviceName = device.getName();
-                String deviceAddress = device.getAddress();
-                if (mScanning) {
-                    mBluetoothAdapter.stopLeScan(mLeScanCallback);
-                    mScanning = false;
-                }
-            }
-        });
-        */
 
         return builder.create();
 
@@ -195,16 +161,18 @@ public class BluetoothDialogFragment extends android.support.v4.app.DialogFragme
                 public void onLeScan(final BluetoothDevice device, int rssi, byte[] scanRecord) {
                     if(mContext == null) {
                         //TODO: debug this section
-                        //mContext = getActivity();
+                        //onDetach() has been called
                         dismiss();
                     }
-                    ((Activity) mContext).runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            mLeDeviceListAdapter.addDevice(device);
-                            mLeDeviceListAdapter.notifyDataSetChanged();
-                        }
-                    });
+                    if(mContext != null) {  //
+                        ((Activity) mContext).runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                mLeDeviceListAdapter.addDevice(device);
+                                mLeDeviceListAdapter.notifyDataSetChanged();
+                            }
+                        });
+                    }
                 }
             };
 
