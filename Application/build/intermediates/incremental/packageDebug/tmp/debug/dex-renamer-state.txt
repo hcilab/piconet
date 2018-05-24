@@ -1,4 +1,4 @@
-#Sun May 20 14:21:44 ADT 2018
+#Thu May 24 15:31:39 ADT 2018
 base.0=C\:\\Users\\user\\androidRepos\\android-BLE\\Application\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

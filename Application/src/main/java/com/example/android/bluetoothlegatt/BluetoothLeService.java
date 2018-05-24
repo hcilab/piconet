@@ -59,9 +59,9 @@ public class BluetoothLeService extends Service {
     private LinkedList <Integer> mConnectionState = new LinkedList<Integer>();//STATE_DISCONNECTED;
 
     //Constants
-    private static final int STATE_DISCONNECTED = 0;
-    private static final int STATE_CONNECTING = 1;
-    private static final int STATE_CONNECTED = 2;
+    public static final int STATE_DISCONNECTED = 0;
+    public static final int STATE_CONNECTING = 1;
+    public static final int STATE_CONNECTED = 2;
 
     public final static String ACTION_GATT_CONNECTED =
             "com.example.bluetooth.le.ACTION_GATT_CONNECTED";
@@ -303,6 +303,55 @@ public class BluetoothLeService extends Service {
         return true;
     }
 
+    public boolean connect(String address) {
+        if (mBluetoothAdapter == null || address == null) {
+            Log.w(TAG, "BluetoothAdapter not initialized or unspecified address.");
+            return false;
+        }
+        Log.d(TAG, "connect: Trying to connect to "+address.toString());
+
+        int deviceNum = getDeviceNumber(address);
+        if (deviceNum == -2) {
+            Log.d(TAG, "connect: Gatt list not initialized");
+        }
+        // Previously connected device.  Try to reconnect.
+        if (deviceNum >= 0) {//mBluetoothGatt. != null) {
+            if(mConnectionState.get(deviceNum) > STATE_DISCONNECTED)
+                return true;
+            Log.d(TAG, "Trying to use an existing mBluetoothGatt for connection.");
+            if (mBluetoothGatt.get(deviceNum).connect()) {
+                mConnectionState.set(deviceNum, STATE_CONNECTING);
+                broadcastUpdate(ACTION_GATT_CONNECTING, address);
+                Log.d(TAG, "connect: Successfully reconnected to " + mBluetoothGatt.get(deviceNum).getDevice().getAddress());
+                return true;
+            } else {
+                Log.d(TAG, "connect: Could not reconnect to " + mBluetoothGatt.get(deviceNum).getDevice().getAddress());
+                return false;
+            }
+        }
+
+        final BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(address);
+        if (device == null) {
+            Log.w(TAG, "Device not found.  Unable to connect.");
+            return false;
+        }
+        // We want to directly connect to the device, so we are setting the autoConnect
+        // parameter to false.
+        BluetoothGatt temp = device.connectGatt(this, false, mGattCallback);
+        if(temp != null) {
+            mBluetoothGatt.add(temp);
+            Log.d(TAG, "Trying to create a new connection.");
+            mBluetoothDeviceAddress.add(address);
+            mConnectionState.add(STATE_CONNECTING);
+            broadcastUpdate(ACTION_GATT_CONNECTING, address);
+            Log.d(TAG, "connect: Connecting to " + address);
+        }else{
+            Log.d(TAG, "connect: Error connecting to " + address);
+        }
+
+        return true;
+    }
+
     /**
      * Disconnects an existing connection or cancel a pending connection. The disconnection result
      * is reported asynchronously through the
@@ -315,7 +364,41 @@ public class BluetoothLeService extends Service {
             return;
         }
         for(int i = 0; i < mBluetoothGatt.size(); i++)
-            mBluetoothGatt.get(i).disconnect();
+            if (mBluetoothGatt.get(i) != null)
+                mBluetoothGatt.get(i).disconnect();
+    }
+
+    public boolean disconnect(final ArrayList<String> addresses) {
+        if (mBluetoothAdapter == null || addresses == null) {
+            Log.w(TAG, "BluetoothAdapter not initialized or unspecified address.");
+            return false;
+        }
+        Log.d(TAG, "connect: Trying to connect to "+addresses.toString());
+        if(addresses.size() < 1){
+            Log.w(TAG, "connect: No devices selected.");
+            return false;
+        }
+        for(int i = 0; i < addresses.size(); i++) {
+            int deviceNum = getDeviceNumber(addresses.get(i));
+            if (deviceNum == -2) {
+                Log.d(TAG, "connect: Gatt list not initialized");
+            }
+            // Previously connected device.  Try to reconnect.
+            if (deviceNum >= 0) {//mBluetoothGatt. != null) {
+                if(mConnectionState.get(deviceNum) == STATE_DISCONNECTED)
+                    continue;
+
+                mBluetoothGatt.get(deviceNum).disconnect();
+            }
+
+            final BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(addresses.get(i));
+            if (device == null) {
+                Log.w(TAG, "Device not found.  Unable to connect.");
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /**
@@ -468,7 +551,7 @@ public class BluetoothLeService extends Service {
             return -2;
         }
         for(int i = 0; i < mBluetoothGatt.size(); i++){
-            if(gatt.getDevice().getAddress() == mBluetoothGatt.get(i).getDevice().getAddress()){
+            if(gatt.getDevice().getAddress().equals(mBluetoothGatt.get(i).getDevice().getAddress())){
                 Log.d(TAG, "getDeviceNumber: "+i);
                 return i;
             }
@@ -486,5 +569,44 @@ public class BluetoothLeService extends Service {
             }
         }
         return -1;
+    }
+    public BluetoothDevice getDevice(String address){
+        if(mBluetoothGatt == null){
+            return null;
+        }
+        for(int i = 0; i < mBluetoothGatt.size(); i++){
+            if(address == mBluetoothGatt.get(i).getDevice().getAddress()){
+                Log.d(TAG, "getDeviceNumber: "+i);
+                return mBluetoothGatt.get(i).getDevice();
+            }
+        }
+        return null;
+    }
+
+    public boolean isConnected(String address){
+        int deviceNum = getDeviceNumber(address);
+        if(deviceNum < 0)
+            return false;
+        if(mConnectionState.get(deviceNum) > 0)
+            return true;
+        else
+            return false;
+    }
+
+    public void removeDevice(String address){
+        int deviceNum = getDeviceNumber(address);
+        ArrayList<String> arr = new ArrayList<String>();
+        arr.add(address);
+        disconnect(arr);
+
+        //Potential for race condition if other methods are modifying these values
+        mBluetoothGatt.set(deviceNum,null);
+        mConnectionState.set(deviceNum,null);
+        mBluetoothDeviceAddress.set(deviceNum,null);
+        mBluetoothGatt.remove(deviceNum);
+        mConnectionState.remove(deviceNum);
+        mBluetoothDeviceAddress.remove(deviceNum);
+        broadcastUpdate(ACTION_GATT_DISCONNECTED, address);
+
     }
 }

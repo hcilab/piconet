@@ -10,8 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e7aa3af-c194-43dc-8d95-36b94eced287" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Application/src/main/res/layout/connected_device.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
@@ -20,45 +18,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Application/Application.iml" afterPath="$PROJECT_DIR$/Application/Application.iml" />
-      <change beforePath="$PROJECT_DIR$/Application/build.gradle" afterPath="$PROJECT_DIR$/Application/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/compat/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/compat/R.java" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/coreui/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/coreui/R.java" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/coreutils/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/coreutils/R.java" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/fragment/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/fragment/R.java" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/graphics/drawable/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/graphics/drawable/R.java" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/graphics/drawable/animated/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/graphics/drawable/animated/R.java" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/mediacompat/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/mediacompat/R.java" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/v13/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/v13/R.java" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/v4/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/v4/R.java" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/com/example/android/bluetoothlegatt/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/com/example/android/bluetoothlegatt/R.java" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/multi-v2/debug.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/multi-v2/debug.json" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/multi-v2/values.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/multi-v2/values.json" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/blame/res/debug/single/debug.json" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/compat/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/compat/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/compat/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/compat/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/coreui/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/coreui/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/coreui/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/coreui/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/coreutils/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/coreutils/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/coreutils/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/coreutils/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/fragment/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/fragment/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/fragment/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/fragment/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/graphics/drawable/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/graphics/drawable/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/graphics/drawable/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/graphics/drawable/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/graphics/drawable/animated/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/mediacompat/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/mediacompat/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/mediacompat/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/mediacompat/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v13/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v13/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v13/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v13/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v4/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v4/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v4/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v4/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/BluetoothDialogFragment$3$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/BluetoothDialogFragment$3$1.class" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/BluetoothLeService$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/BluetoothLeService$1.class" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/BluetoothLeService$LocalBinder.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/BluetoothLeService$LocalBinder.class" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/BluetoothLeService.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/BluetoothLeService.class" />
@@ -67,50 +29,18 @@
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$3.class" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity$4.class" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceControlActivity.class" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$1.class" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$2$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$2$1.class" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$2.class" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$LeDeviceListAdapter.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$LeDeviceListAdapter.class" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$ViewHolder.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity$ViewHolder.class" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/DeviceScanActivity.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/LeDeviceListAdapter2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/LeDeviceListAdapter2.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$id.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$integer.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$integer.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$layout.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$menu.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$menu.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$string.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$string.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$style.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$style.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$styleable.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/R$styleable.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/bluetoothDialogFragment$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/bluetoothDialogFragment$2.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/bluetoothDialogFragment$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/bluetoothDialogFragment$3.class" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/bluetoothDialogFragment.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/bluetoothDialogFragment.class" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.class" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/ASgL476fF808nhB40fm9LuT8VIM=" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/ASgL476fF808nhB40fm9LuT8VIM=" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/nPUzJQDxVaknDXsuDyW8oSmvG7w=" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/nPUzJQDxVaknDXsuDyW8oSmvG7w=" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/debug/resources-debug.ap_" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/res/merged/debug/layout_gatt_services_characteristics.xml.flat" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/merged/debug/layout_gatt_services_characteristics.xml.flat" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/res/merged/debug/values_values.arsc.flat" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/merged/debug/values_values.arsc.flat" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/symbols/debug/R.txt" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/compat/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/compat/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/compat/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/compat/R$layout.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/coreui/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/coreui/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/coreui/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/coreui/R$layout.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/coreutils/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/coreutils/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/coreutils/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/coreutils/R$layout.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/fragment/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/fragment/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/fragment/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/fragment/R$layout.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/graphics/drawable/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/graphics/drawable/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/graphics/drawable/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/graphics/drawable/R$layout.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/graphics/drawable/animated/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/graphics/drawable/animated/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/graphics/drawable/animated/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/graphics/drawable/animated/R$layout.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/mediacompat/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/mediacompat/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/mediacompat/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/mediacompat/R$layout.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v13/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v13/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v13/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v13/R$layout.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v4/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v4/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v4/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v4/R$layout.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v7/appcompat/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v7/appcompat/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v7/appcompat/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/android/support/v7/appcompat/R$layout.dex" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/res/merged/debug/layout_connected_device.xml.flat" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/merged/debug/layout_connected_device.xml.flat" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/BluetoothLeService$1.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/BluetoothLeService$1.dex" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/BluetoothLeService$LocalBinder.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/BluetoothLeService$LocalBinder.dex" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/BluetoothLeService.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/BluetoothLeService.dex" />
@@ -119,28 +49,20 @@
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceControlActivity$3.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceControlActivity$3.dex" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceControlActivity$4.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceControlActivity$4.dex" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceControlActivity.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceControlActivity.dex" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity$1.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity$1.dex" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity$2$1.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity$2$1.dex" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity$2.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity$2.dex" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity$LeDeviceListAdapter.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity$LeDeviceListAdapter.dex" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity$ViewHolder.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity$ViewHolder.dex" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/DeviceScanActivity.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/LeDeviceListAdapter2.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/LeDeviceListAdapter2.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$id.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$id.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$integer.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$integer.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$layout.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$layout.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$menu.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$menu.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$string.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$string.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$style.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$style.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$styleable.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/R$styleable.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/bluetoothDialogFragment$2.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/bluetoothDialogFragment$2.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/bluetoothDialogFragment$3$1.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/bluetoothDialogFragment$3$1.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/bluetoothDialogFragment$3.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/bluetoothDialogFragment$3.dex" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/bluetoothDialogFragment.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/bluetoothDialogFragment.dex" />
+      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexBuilder/debug/15/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.dex" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexMerger/debug/0/classes.dex" />
       <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/dexMerger/debug/__content__.json" />
-      <change beforePath="$PROJECT_DIR$/Application/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/transforms/mergeJavaRes/debug/0.jar" />
       <change beforePath="$PROJECT_DIR$/Application/build/outputs/apk/debug/Application-debug.apk" afterPath="$PROJECT_DIR$/Application/build/outputs/apk/debug/Application-debug.apk" />
-      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothDialogFragment.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothDialogFragment.java" />
       <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java" />
       <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java" />
-      <change beforePath="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" afterPath="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java" />
+      <change beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -166,43 +88,10 @@
       <file leaf-file-name="BluetoothLeService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="68" column="60" lean-forward="false" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+            <state relative-caret-position="64">
+              <caret line="477" column="48" lean-forward="true" selection-start-line="477" selection-start-column="38" selection-end-line="477" selection-end-column="62" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1966#1974#0" expanded="true" />
-                <element signature="e#2048#2063#0" expanded="true" />
-                <element signature="e#2134#2143#0" expanded="true" />
-                <element signature="e#17321#17343#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviceControlActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2808">
-              <caret line="269" column="17" lean-forward="false" selection-start-line="269" selection-start-column="17" selection-end-line="269" selection-end-column="17" />
-              <folding>
-                <element signature="e#2606#2646#0" expanded="true" />
-                <element signature="e#4981#6401#0" expanded="true" />
-                <element signature="e#5384#5402#0" expanded="true" />
-                <element signature="e#5605#5626#0" expanded="true" />
-                <element signature="e#6400#6401#0" expanded="true" />
-                <element signature="e#6792#8518#0" expanded="true" />
-                <element signature="e#8517#8518#0" expanded="true" />
-                <element signature="e#8651#8667#0" expanded="true" />
-                <element signature="e#11922#12070#0" expanded="true" />
-                <element signature="e#12069#12070#0" expanded="true" />
-                <element signature="e#12641#12691#0" expanded="true" />
-                <element signature="e#12729#12786#0" expanded="true" />
-                <element signature="e#12862#12887#0" expanded="true" />
-                <element signature="e#12999#13035#0" expanded="true" />
-                <element signature="e#13310#13326#0" expanded="true" />
-                <element signature="e#13830#13855#0" expanded="true" />
-                <element signature="e#14074#14103#0" expanded="true" />
-                <element signature="e#14371#14387#0" expanded="true" />
+                <element signature="e#25455#25463#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,63 +100,131 @@
       <file leaf-file-name="SelectedDeviceListAdapter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gatt_services_characteristics.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BluetoothDialogFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothDialogFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="163" column="52" lean-forward="false" selection-start-line="163" selection-start-column="52" selection-end-line="163" selection-end-column="52" />
+            <state relative-caret-position="-2054">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2680#2718#0" expanded="true" />
-                <element signature="e#3086#3745#0" expanded="true" />
-                <element signature="e#3744#3745#0" expanded="true" />
-                <element signature="e#4852#5115#0" expanded="true" />
-                <element signature="e#5114#5115#0" expanded="true" />
-                <element signature="e#5484#6323#0" expanded="true" />
-                <element signature="e#5960#6267#0" expanded="true" />
-                <element signature="e#6266#6267#0" expanded="true" />
-                <element signature="e#6322#6323#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+                <element signature="e#1205#1206#0" expanded="true" />
+                <element signature="e#5056#5057#0" expanded="true" />
+                <element signature="e#5093#5094#0" expanded="true" />
+                <element signature="e#5136#5137#0" expanded="true" />
+                <element signature="e#5182#5183#0" expanded="true" />
+                <element signature="e#5237#5238#0" expanded="true" />
+                <element signature="e#5288#5289#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeviceScanActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java">
+      <file leaf-file-name="LinearLayout.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-27/android.jar!/android/widget/LinearLayout.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="249" column="30" lean-forward="false" selection-start-line="249" selection-start-column="30" selection-end-line="249" selection-end-column="30" />
+            <state relative-caret-position="315">
+              <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
               <folding>
-                <element signature="e#8058#8059#0" expanded="true" />
-                <element signature="e#8113#8114#0" expanded="true" />
-                <element signature="e#8144#8145#0" expanded="true" />
-                <element signature="e#8186#8187#0" expanded="true" />
-                <element signature="e#8237#8238#0" expanded="true" />
-                <element signature="e#8285#8286#0" expanded="true" />
-                <element signature="e#8343#8344#0" expanded="true" />
-                <element signature="e#8391#8392#0" expanded="true" />
-                <element signature="e#8449#8450#0" expanded="true" />
-                <element signature="e#8481#8482#0" expanded="true" />
+                <marker date="1525710616502" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1525710616502" expanded="false" signature="138:489" ph="..." />
+                <marker date="1525710616502" expanded="true" signature="887:995" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="1058:1166" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="1247:1355" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="1453:1561" ph="{...}" />
+                <marker date="1525710616502" expanded="false" signature="1612:1623" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="1659:1665" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="1716:1727" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="1763:1769" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="1803:1814" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="1850:1856" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="1898:1909" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="1945:1951" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="2005:2016" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="2052:2058" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="2106:2117" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="2153:2159" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="2195:2206" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="2242:2248" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="2290:2301" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="2337:2343" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="2383:2394" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="2430:2436" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="2497:2508" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="2544:2550" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="2605:2616" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="2652:2658" ph=" }" />
+                <marker date="1525710616502" expanded="true" signature="2727:2779" ph="{...}" />
+                <marker date="1525710616502" expanded="false" signature="2809:2820" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="2856:2862" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="2909:2920" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="2956:2962" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="3015:3026" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="3062:3068" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="3101:3112" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="3148:3154" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="3201:3212" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="3248:3254" ph=" }" />
+                <marker date="1525710616502" expanded="true" signature="3330:3382" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="3457:3509" ph="{...}" />
+                <marker date="1525710616502" expanded="false" signature="3570:3581" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="3617:3623" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="3672:3683" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="3719:3725" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="3758:3769" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="3805:3811" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="3852:3863" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="3899:3905" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="3934:3945" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="3981:3987" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="4048:4059" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="4095:4101" ph=" }" />
+                <marker date="1525710616502" expanded="false" signature="4158:4169" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="4205:4211" ph=" }" />
+                <marker date="1525710616502" expanded="true" signature="4291:4343" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="4415:4467" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="4570:4622" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="4703:4755" ph="{...}" />
+                <marker date="1525710616502" expanded="false" signature="4808:4819" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="4855:4861" ph=" }" />
+                <marker date="1525710616502" expanded="true" signature="4927:7088" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="4937:5748" ph="@{...}" />
+                <marker date="1525710616502" expanded="true" signature="5785:5845" ph="@{...}" />
+                <marker date="1525710616502" expanded="true" signature="5935:6057" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="6110:6232" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="6299:6421" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="6490:6612" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="6669:6791" ph="{...}" />
+                <marker date="1525710616502" expanded="true" signature="6855:6977" ph="{...}" />
+                <marker date="1525710616502" expanded="false" signature="7021:7036" ph=" { " />
+                <marker date="1525710616502" expanded="false" signature="7072:7082" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceControlActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="152" column="56" lean-forward="false" selection-start-line="152" selection-start-column="56" selection-end-line="152" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2712#2752#0" expanded="true" />
+                <element signature="e#5580#7389#0" expanded="true" />
+                <element signature="e#6044#6062#0" expanded="true" />
+                <element signature="e#6458#6479#0" expanded="true" />
+                <element signature="e#7388#7389#0" expanded="true" />
+                <element signature="e#7780#9506#0" expanded="true" />
+                <element signature="e#9505#9506#0" expanded="true" />
+                <element signature="e#9639#9655#0" expanded="true" />
+                <element signature="e#13494#13642#0" expanded="true" />
+                <element signature="e#13641#13642#0" expanded="true" />
+                <element signature="e#14213#14263#0" expanded="true" />
+                <element signature="e#14301#14358#0" expanded="true" />
+                <element signature="e#14434#14459#0" expanded="true" />
+                <element signature="e#14571#14607#0" expanded="true" />
+                <element signature="e#14882#14898#0" expanded="true" />
+                <element signature="e#15402#15427#0" expanded="true" />
+                <element signature="e#15646#15675#0" expanded="true" />
+                <element signature="e#15943#15959#0" expanded="true" />
+                <element signature="e#19491#19499#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -285,19 +242,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onListItemClick</find>
-      <find>ledevi</find>
-      <find>btfragment</find>
-      <find>data av</find>
-      <find>commsw</find>
-      <find>set</find>
-      <find>action_dat</find>
-      <find>setcha</find>
-      <find>setchara</find>
-      <find>get</find>
-      <find>menu</find>
-      <find>discover</find>
-      <find>discoverSer</find>
       <find>services_di</find>
       <find>callback</find>
       <find>discon</find>
@@ -306,15 +250,28 @@
       <find>rootView</find>
       <find>connect</find>
       <find>dismiss</find>
-      <find>toast</find>
       <find>thread</find>
       <find>ui</find>
       <find>inflate</find>
       <find>expan</find>
-      <find>listit</find>
       <find>lede</find>
       <find>connecting</find>
       <find>selectedD</find>
+      <find>listit</find>
+      <find>callb</find>
+      <find>on</find>
+      <find>forget</find>
+      <find>removede</find>
+      <find>notifi</find>
+      <find>notification</find>
+      <find>notifica</find>
+      <find>extra</find>
+      <find>put</find>
+      <find>viewGroup</find>
+      <find>notify</find>
+      <find>toast</find>
+      <find>broad</find>
+      <find>broadca</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2200,11 +2157,11 @@
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/bluetoothDialogFragment.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/bluetooth_dialog_fragment.xml" />
         <option value="$PROJECT_DIR$/Application/build.gradle" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/gatt_services_characteristics.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothDialogFragment.java" />
         <option value="$PROJECT_DIR$/Application/src/main/res/layout/connected_device.xml" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java" />
         <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java" />
       </list>
@@ -2512,27 +2469,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java</url>
-          <line>347</line>
+          <line>430</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java</url>
-          <line>373</line>
+          <line>456</line>
           <properties />
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>253</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>84</line>
-          <properties />
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothDialogFragment.java</url>
@@ -2540,16 +2485,38 @@
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java</url>
+          <line>596</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.java</url>
+          <line>186</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.java</url>
+          <line>203</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java</url>
-          <line>393</line>
-          <properties class="com.example.android.bluetoothlegatt.DeviceControlActivity" method="reScanDevices">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="11" />
+          <line>466</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="28" />
+      <option name="time" value="53" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2699,14 +2666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-27/android.jar!/android/widget/AdapterView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="53" column="71" lean-forward="false" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-289">
@@ -2755,27 +2714,379 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/LeDeviceListAdapter2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="148">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java">
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-27/android.jar!/android/widget/AbsListView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="249" column="30" lean-forward="false" selection-start-line="249" selection-start-column="30" selection-end-line="249" selection-end-column="30" />
+        <state relative-caret-position="301">
+          <caret line="660" column="0" lean-forward="false" selection-start-line="660" selection-start-column="0" selection-end-line="660" selection-end-column="0" />
           <folding>
-            <element signature="e#8058#8059#0" expanded="true" />
-            <element signature="e#8113#8114#0" expanded="true" />
-            <element signature="e#8144#8145#0" expanded="true" />
-            <element signature="e#8186#8187#0" expanded="true" />
-            <element signature="e#8237#8238#0" expanded="true" />
-            <element signature="e#8285#8286#0" expanded="true" />
-            <element signature="e#8343#8344#0" expanded="true" />
-            <element signature="e#8391#8392#0" expanded="true" />
-            <element signature="e#8449#8450#0" expanded="true" />
-            <element signature="e#8481#8482#0" expanded="true" />
+            <marker date="1525710616502" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1525710616502" expanded="false" signature="138:1128" ph="..." />
+            <marker date="1525710616502" expanded="true" signature="1723:1831" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="1893:2001" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="2081:2189" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="2286:2394" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="2439:2450" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2486:2492" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2541:2552" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2588:2594" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2632:2643" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2679:2685" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2733:2744" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2780:2786" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2827:2838" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2874:2880" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2937:2948" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2984:2990" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3029:3040" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3076:3082" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3114:3125" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3161:3167" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3228:3239" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3275:3281" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="3353:3405" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="3437:3448" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3484:3490" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3537:3548" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3584:3590" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="3681:3733" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="3788:3799" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3835:3841" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3893:3904" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3940:3946" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="4011:4063" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="4111:4122" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4158:4164" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4208:4219" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4255:4261" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4325:4336" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4372:4378" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4438:4449" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4485:4491" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4537:4548" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4584:4590" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4650:4661" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4697:4703" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4772:4783" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4819:4825" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="4895:4947" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="5000:5011" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5047:5053" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5121:5132" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5168:5174" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5233:5244" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5280:5286" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="5352:5404" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="5468:5479" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5515:5521" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5561:5572" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5608:5614" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5676:5687" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5723:5729" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5790:5801" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5837:5843" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5888:5899" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5935:5941" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5999:6010" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6046:6052" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="6102:6113" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6149:6155" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="6196:6207" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6243:6249" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="6347:6399" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="6432:6443" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6479:6485" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="6534:6545" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6581:6587" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="6636:6647" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6683:6689" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="6737:6748" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6784:6790" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="6838:6849" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6885:6891" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="6942:6953" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6989:6995" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="7071:7123" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="7198:7250" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="7287:7298" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="7334:7340" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="7397:7408" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="7444:7450" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="7486:7497" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="7533:7539" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="7578:7589" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="7625:7631" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="7668:7679" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="7715:7721" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="7759:7770" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="7806:7812" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="7924:7976" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="8024:8035" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="8071:8077" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="8126:8137" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="8173:8179" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="8221:8232" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="8268:8274" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="8315:8326" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="8362:8368" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="8411:8422" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="8458:8464" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="8508:8519" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="8555:8561" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="8630:8682" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="8735:8746" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="8782:8788" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="8828:8839" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="8875:8881" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="8924:8935" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="8971:8977" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="9012:9023" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="9059:9065" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="9122:9133" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="9169:9175" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="9218:9229" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="9265:9271" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="9319:9330" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="9366:9372" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="9419:9430" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="9466:9472" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="9513:9524" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="9560:9566" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="9609:9620" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="9656:9662" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="9725:9777" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="9838:9849" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="9885:9891" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="9937:9948" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="9984:9990" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="10042:10053" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="10089:10095" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="10133:10144" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="10180:10186" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="10240:10251" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="10287:10293" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="10357:10409" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="10491:10543" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="10602:10613" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="10649:10655" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="10712:10723" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="10759:10765" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="10821:10832" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="10868:10874" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="10941:10993" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="11039:11050" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="11086:11092" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="11136:11147" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="11183:11189" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="11248:11259" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="11295:11301" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="11350:11361" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="11397:11403" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="11501:11553" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="11613:11624" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="11660:11666" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="11704:11715" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="11751:11757" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="11845:11897" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="11973:12025" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="12139:12191" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="12291:12343" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="12380:12391" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="12427:12433" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="12513:12565" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="12626:12637" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="12673:12679" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="12762:12814" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="12872:12883" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="12919:12925" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="12979:12990" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="13026:13032" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="13077:13088" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="13124:13130" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="13177:13188" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="13224:13230" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="13284:13295" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="13331:13337" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="13425:13477" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="13551:13603" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="13677:13729" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="13789:13800" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="13836:13842" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="13879:13890" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="13926:13932" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="13981:13992" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="14028:14034" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="14069:14080" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="14116:14122" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="14162:14173" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="14209:14215" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="14259:14270" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="14306:14312" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="14352:14363" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="14399:14405" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="14479:14531" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="14588:14599" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="14635:14641" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="14676:14687" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="14723:14729" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="14765:14776" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="14812:14818" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="14852:14863" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="14899:14905" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="14990:15042" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="15124:15176" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="15222:15233" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="15269:15275" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="15320:15331" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="15367:15373" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="15455:15507" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="15619:15671" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="15750:15802" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="15883:15935" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="15980:15991" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="16027:16033" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="16069:16080" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="16116:16122" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="16154:16165" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="16201:16207" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="16253:16264" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="16300:16306" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="16312:16365" ph="@{...}" />
+            <marker date="1525710616502" expanded="false" signature="16400:16411" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="16447:16453" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="16501:16512" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="16548:16554" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="16608:16619" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="16655:16661" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="16706:16717" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="16753:16759" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="16806:16817" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="16853:16859" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="16906:16917" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="16953:16959" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="17036:17088" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="17146:17157" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="17193:17199" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="17239:17290" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="17373:18104" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="17434:17556" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="17600:17722" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="17780:17902" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="17976:18098" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="18168:18267" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="18314:18376" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="18416:18673" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-27/android.jar!/android/widget/ListView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+          <folding>
+            <marker date="1525710616502" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1525710616502" expanded="false" signature="138:491" ph="..." />
+            <marker date="1525710616502" expanded="true" signature="586:694" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="753:861" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="938:1046" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="1140:1248" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="1285:1296" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="1332:1338" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="1413:1465" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="1504:1515" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="1551:1557" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="1595:1606" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="1642:1648" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="1693:1704" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="1740:1746" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="1821:1873" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="1912:1923" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="1959:1965" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2003:2014" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2050:2056" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2101:2112" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2148:2154" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2191:2202" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2238:2244" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2298:2309" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2345:2351" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2400:2411" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2447:2453" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="2546:2598" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="2652:2663" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2699:2705" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2755:2766" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2802:2808" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2851:2862" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2898:2904" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="2973:3025" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="3101:3153" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="3190:3201" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3237:3243" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3279:3290" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3326:3332" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3376:3387" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3423:3429" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3476:3487" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3523:3529" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3582:3593" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3629:3635" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3694:3705" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3741:3747" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="3828:3880" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="3937:3948" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3984:3990" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4047:4058" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4094:4100" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4139:4150" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4186:4192" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4223:4234" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4270:4276" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4322:4333" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4369:4375" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4423:4434" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4470:4476" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="4555:4607" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="4641:4652" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4688:4694" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4740:4751" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4787:4793" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4828:4839" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4875:4881" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4927:4938" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4974:4980" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="5054:5106" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="5153:5164" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5200:5206" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="5280:5332" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="5379:5390" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5426:5432" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5486:5497" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5533:5539" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5582:5593" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5629:5635" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5689:5700" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5736:5742" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="5785:5796" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="5832:5838" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="5936:5988" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="6026:6037" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6073:6079" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="6085:6103" ph="/**...*/" />
+            <marker date="1525710616502" expanded="false" signature="6155:6166" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6202:6208" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="6261:6272" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6308:6314" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="6426:6478" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="6511:6702" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="6635:6650" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="6686:6696" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -2785,28 +3096,25 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        <state relative-caret-position="331">
+          <caret line="86" column="25" lean-forward="false" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothDialogFragment.java">
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-27/android.jar!/android/widget/AdapterView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="163" column="52" lean-forward="false" selection-start-line="163" selection-start-column="52" selection-end-line="163" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2680#2718#0" expanded="true" />
-            <element signature="e#3086#3745#0" expanded="true" />
-            <element signature="e#3744#3745#0" expanded="true" />
-            <element signature="e#4852#5115#0" expanded="true" />
-            <element signature="e#5114#5115#0" expanded="true" />
-            <element signature="e#5484#6323#0" expanded="true" />
-            <element signature="e#5960#6267#0" expanded="true" />
-            <element signature="e#6266#6267#0" expanded="true" />
-            <element signature="e#6322#6323#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="139">
+          <caret line="53" column="71" lean-forward="false" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-27/android.jar!/android/view/View.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="330" column="35" lean-forward="false" selection-start-line="330" selection-start-column="35" selection-end-line="330" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2815,58 +3123,167 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="255">
           <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothDialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="e#3086#3745#0" expanded="false" />
+            <element signature="e#3744#3745#0" expanded="false" />
+            <element signature="e#5484#6323#0" expanded="false" />
+            <element signature="e#6322#6323#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceScanActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="174" column="90" lean-forward="false" selection-start-line="174" selection-start-column="90" selection-end-line="174" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-27/android.jar!/android/widget/LinearLayout.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+          <folding>
+            <marker date="1525710616502" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1525710616502" expanded="false" signature="138:489" ph="..." />
+            <marker date="1525710616502" expanded="true" signature="887:995" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="1058:1166" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="1247:1355" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="1453:1561" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="1612:1623" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="1659:1665" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="1716:1727" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="1763:1769" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="1803:1814" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="1850:1856" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="1898:1909" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="1945:1951" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2005:2016" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2052:2058" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2106:2117" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2153:2159" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2195:2206" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2242:2248" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2290:2301" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2337:2343" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2383:2394" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2430:2436" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2497:2508" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2544:2550" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2605:2616" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2652:2658" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="2727:2779" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="2809:2820" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2856:2862" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="2909:2920" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="2956:2962" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3015:3026" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3062:3068" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3101:3112" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3148:3154" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3201:3212" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3248:3254" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="3330:3382" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="3457:3509" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="3570:3581" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3617:3623" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3672:3683" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3719:3725" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3758:3769" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3805:3811" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3852:3863" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3899:3905" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="3934:3945" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="3981:3987" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4048:4059" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4095:4101" ph=" }" />
+            <marker date="1525710616502" expanded="false" signature="4158:4169" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4205:4211" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="4291:4343" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="4415:4467" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="4570:4622" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="4703:4755" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="4808:4819" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="4855:4861" ph=" }" />
+            <marker date="1525710616502" expanded="true" signature="4927:7088" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="4937:5748" ph="@{...}" />
+            <marker date="1525710616502" expanded="true" signature="5785:5845" ph="@{...}" />
+            <marker date="1525710616502" expanded="true" signature="5935:6057" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="6110:6232" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="6299:6421" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="6490:6612" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="6669:6791" ph="{...}" />
+            <marker date="1525710616502" expanded="true" signature="6855:6977" ph="{...}" />
+            <marker date="1525710616502" expanded="false" signature="7021:7036" ph=" { " />
+            <marker date="1525710616502" expanded="false" signature="7072:7082" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/BluetoothLeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="68" column="60" lean-forward="false" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+        <state relative-caret-position="64">
+          <caret line="477" column="48" lean-forward="true" selection-start-line="477" selection-start-column="38" selection-end-line="477" selection-end-column="62" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1966#1974#0" expanded="true" />
-            <element signature="e#2048#2063#0" expanded="true" />
-            <element signature="e#2134#2143#0" expanded="true" />
-            <element signature="e#17321#17343#0" expanded="true" />
+            <element signature="e#25455#25463#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/DeviceControlActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2808">
-          <caret line="269" column="17" lean-forward="false" selection-start-line="269" selection-start-column="17" selection-end-line="269" selection-end-column="17" />
+        <state relative-caret-position="250">
+          <caret line="152" column="56" lean-forward="false" selection-start-line="152" selection-start-column="56" selection-end-line="152" selection-end-column="56" />
           <folding>
-            <element signature="e#2606#2646#0" expanded="true" />
-            <element signature="e#4981#6401#0" expanded="true" />
-            <element signature="e#5384#5402#0" expanded="true" />
-            <element signature="e#5605#5626#0" expanded="true" />
-            <element signature="e#6400#6401#0" expanded="true" />
-            <element signature="e#6792#8518#0" expanded="true" />
-            <element signature="e#8517#8518#0" expanded="true" />
-            <element signature="e#8651#8667#0" expanded="true" />
-            <element signature="e#11922#12070#0" expanded="true" />
-            <element signature="e#12069#12070#0" expanded="true" />
-            <element signature="e#12641#12691#0" expanded="true" />
-            <element signature="e#12729#12786#0" expanded="true" />
-            <element signature="e#12862#12887#0" expanded="true" />
-            <element signature="e#12999#13035#0" expanded="true" />
-            <element signature="e#13310#13326#0" expanded="true" />
-            <element signature="e#13830#13855#0" expanded="true" />
-            <element signature="e#14074#14103#0" expanded="true" />
-            <element signature="e#14371#14387#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2712#2752#0" expanded="true" />
+            <element signature="e#5580#7389#0" expanded="true" />
+            <element signature="e#6044#6062#0" expanded="true" />
+            <element signature="e#6458#6479#0" expanded="true" />
+            <element signature="e#7388#7389#0" expanded="true" />
+            <element signature="e#7780#9506#0" expanded="true" />
+            <element signature="e#9505#9506#0" expanded="true" />
+            <element signature="e#9639#9655#0" expanded="true" />
+            <element signature="e#13494#13642#0" expanded="true" />
+            <element signature="e#13641#13642#0" expanded="true" />
+            <element signature="e#14213#14263#0" expanded="true" />
+            <element signature="e#14301#14358#0" expanded="true" />
+            <element signature="e#14434#14459#0" expanded="true" />
+            <element signature="e#14571#14607#0" expanded="true" />
+            <element signature="e#14882#14898#0" expanded="true" />
+            <element signature="e#15402#15427#0" expanded="true" />
+            <element signature="e#15646#15675#0" expanded="true" />
+            <element signature="e#15943#15959#0" expanded="true" />
+            <element signature="e#19491#19499#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/bluetoothlegatt/SelectedDeviceListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="-2054">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1205#1206#0" expanded="true" />
+            <element signature="e#5056#5057#0" expanded="true" />
+            <element signature="e#5093#5094#0" expanded="true" />
+            <element signature="e#5136#5137#0" expanded="true" />
+            <element signature="e#5182#5183#0" expanded="true" />
+            <element signature="e#5237#5238#0" expanded="true" />
+            <element signature="e#5288#5289#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
