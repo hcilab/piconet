@@ -475,7 +475,7 @@ public class BluetoothLeService extends Service {
      *
      * @return A {@code List} of supported services.
      */
-    public List<BluetoothGattService> getSupportedGattServices() {
+    public List<BluetoothGattService> getAllSupportedGattServices() {
         if (mBluetoothGatt == null) return null;
         List<BluetoothGattService> serviceList = new ArrayList<BluetoothGattService>();
         for(int i=0; i<mBluetoothGatt.size(); i++){
@@ -484,6 +484,16 @@ public class BluetoothLeService extends Service {
             String temp = "";
         }
         return serviceList;
+    }
+
+    public List<BluetoothGattService> getSupportedGattServices(String address) {
+        if (mBluetoothGatt == null) return null;
+        int devNum = getDeviceNumber(address);
+        List<BluetoothGattService> services = null;
+        if(devNum >= 0) {
+            services = mBluetoothGatt.get(devNum).getServices();
+        }
+        return services;
     }
 
     public void writeCustomCharacteristic(String value) {

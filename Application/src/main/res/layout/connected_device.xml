@@ -38,6 +38,7 @@
         android:autoSizeTextType="uniform"
         android:layout_width="0dp"
         android:layout_weight="20"
+        android:focusable="false"
         android:layout_height="match_parent" />
     <Button
         android:id="@+id/forget_device"
@@ -45,5 +46,6 @@
         android:autoSizeTextType="uniform"
         android:layout_width="0dp"
         android:layout_weight="20"
+        android:focusable="false"
         android:layout_height="match_parent" />
 </LinearLayout>

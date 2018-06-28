@@ -79,7 +79,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </ListView>
-
+    <!--
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
@@ -105,6 +105,16 @@
         android:layout_height="wrap_content"
         android:onClick="sendDataToArduino"
         android:text="Send data" />
+    -->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Services: "
+        android:textSize="32sp" />
 
     <ExpandableListView android:id="@+id/gatt_services_list"
             android:layout_width="match_parent"

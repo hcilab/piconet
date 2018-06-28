@@ -20,10 +20,7 @@
         android:checkable="false"
         android:orderInCategory="1"
         app:showAsAction="ifRoom"/>
-    <item android:id="@+id/menu_refresh"
-          android:checkable="false"
-          android:orderInCategory="1"
-          app:showAsAction="ifRoom"/>
+    <!--
     <item android:id="@+id/menu_connect"
           android:title="@string/menu_connect"
           android:orderInCategory="100"
@@ -32,4 +29,5 @@
           android:title="@string/menu_disconnect"
           android:orderInCategory="101"
           app:showAsAction="ifRoom|withText"/>
+          -->
 </menu>
