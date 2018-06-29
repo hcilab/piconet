@@ -80,21 +80,25 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
     private SelectedDeviceListAdapter mSelectedDeviceListAdapter;
 
     public void onDeviceSelected(BluetoothDevice bluetoothDevice){
-        String deviceName = bluetoothDevice.getName();
-        String deviceAddress = bluetoothDevice.getAddress();
-        mDeviceAddresses.add(deviceAddress);
-        mSelectedDeviceListAdapter.addDevice(bluetoothDevice);
-        int deviceConnectionStatus = BluetoothLeService.STATE_DISCONNECTED;
-        if(mBluetoothLeService.isConnected(deviceAddress)){
-            deviceConnectionStatus = BluetoothLeService.STATE_CONNECTED;
-        }
-        mSelectedDeviceListAdapter.setDeviceState(deviceAddress,deviceConnectionStatus);
-        mSelectedDeviceListAdapter.notifyDataSetChanged();
-        //Toast.makeText(this, deviceName+" at address: "+deviceAddress+" clicked", Toast.LENGTH_SHORT).show();
-        if (mBluetoothLeService != null) {
-            final boolean result = mBluetoothLeService.connect(deviceAddress);
-            Log.d(TAG, "Connect request result=" + result);
-            //btFragment.dismiss();
+        if(bluetoothDevice == null){
+
+        }else {
+            String deviceName = bluetoothDevice.getName();
+            String deviceAddress = bluetoothDevice.getAddress();
+            mDeviceAddresses.add(deviceAddress);
+            mSelectedDeviceListAdapter.addDevice(bluetoothDevice);
+            int deviceConnectionStatus = BluetoothLeService.STATE_DISCONNECTED;
+            if (mBluetoothLeService.isConnected(deviceAddress)) {
+                deviceConnectionStatus = BluetoothLeService.STATE_CONNECTED;
+            }
+            mSelectedDeviceListAdapter.setDeviceState(deviceAddress, deviceConnectionStatus);
+            mSelectedDeviceListAdapter.notifyDataSetChanged();
+            //Toast.makeText(this, deviceName+" at address: "+deviceAddress+" clicked", Toast.LENGTH_SHORT).show();
+            if (mBluetoothLeService != null) {
+                final boolean result = mBluetoothLeService.connect(deviceAddress);
+                Log.d(TAG, "Connect request result=" + result);
+                //btFragment.dismiss();
+            }
         }
         setSelectedDevice(bluetoothDevice);
     }
@@ -205,21 +209,17 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gatt_services_characteristics);
 
-        final Intent intent = getIntent();
-        mDeviceName = intent.getStringExtra(EXTRAS_DEVICE_NAME);
-        mDeviceAddress = intent.getStringExtra(EXTRAS_DEVICE_ADDRESS);
         mDeviceAddresses = new ArrayList<String>();
-        //mDeviceAddresses.add(mDeviceAddress);
 
         // Sets up UI references.
-        ((TextView) findViewById(R.id.device_address)).setText(mDeviceAddress);
+        ((TextView) findViewById(R.id.device_address)).setText("Please scan for devices (press 'scan' in the menu)");
         mGattServicesList = (ExpandableListView) findViewById(R.id.gatt_services_list);
         mGattServicesList.setOnChildClickListener(servicesListClickListner);
         mConnectionState = (TextView) findViewById(R.id.connection_state);
         mDataField = (TextView) findViewById(R.id.data_value);
 
-        getActionBar().setTitle(mDeviceName);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setTitle("Piconet");
+        getActionBar().setDisplayHomeAsUpEnabled(false);
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
@@ -257,11 +257,13 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         if(deviceIn == null){
             mDeviceAddress = null;
             mDeviceName = null;
+            ((TextView) findViewById(R.id.device_address)).setText("Please select a device (press 'scan' in the menu)");
         }else {
             mDeviceAddress = deviceIn.getAddress();
             mDeviceName = deviceIn.getName();
+            ((TextView) findViewById(R.id.device_address)).setText(mDeviceAddress);
         }
-        ((TextView) findViewById(R.id.device_address)).setText(mDeviceAddress);
+
         if(mBluetoothLeService.isConnected(mDeviceAddress)) {
             updateConnectionState(R.string.connected);
             mConnected = true;

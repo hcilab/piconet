@@ -51,16 +51,16 @@ public class LeDeviceListAdapter2 extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        DeviceScanActivity.ViewHolder viewHolder;
+        ViewHolder viewHolder;
         // General ListView optimization code.
         if (view == null) {
             view = mInflator.inflate(R.layout.listitem_device, null);
-            viewHolder = new DeviceScanActivity.ViewHolder();
+            viewHolder = new ViewHolder();
             viewHolder.deviceAddress = (TextView) view.findViewById(R.id.device_address);
             viewHolder.deviceName = (TextView) view.findViewById(R.id.device_name);
             view.setTag(viewHolder);
         } else {
-            viewHolder = (DeviceScanActivity.ViewHolder) view.getTag();
+            viewHolder = (ViewHolder) view.getTag();
         }
 
         BluetoothDevice device = mLeDevices.get(i);
@@ -72,5 +72,10 @@ public class LeDeviceListAdapter2 extends BaseAdapter {
         viewHolder.deviceAddress.setText(device.getAddress());
 
         return view;
+    }
+
+    static class ViewHolder {
+        TextView deviceName;
+        TextView deviceAddress;
     }
 }
