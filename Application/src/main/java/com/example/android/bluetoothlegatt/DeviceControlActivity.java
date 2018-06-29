@@ -20,8 +20,6 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
 import android.content.BroadcastReceiver;
-import android.content.ClipData;
-import android.content.ClipData.Item;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -117,6 +115,7 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
             mBluetoothLeService.connect(mDeviceAddress);
             BluetoothDevice selectedDevice = mBluetoothLeService.getDevice(mDeviceAddress);
             onDeviceSelected(selectedDevice);
+            mSelectedDeviceListAdapter.addAllDevices(mBluetoothLeService.getAllDevices());
         }
 
         @Override
@@ -237,20 +236,6 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
                 Toast.makeText(getApplication(),"Item clicked!",Toast.LENGTH_SHORT);
             }
         });
-        /*
-        mDeviceList.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                final BluetoothDevice device = mSelectedDeviceListAdapter.getDevice(position);
-                if (device == null)
-                    Log.d("BLEdialog","Null device");
-                else {
-                    //mCallback.onDeviceSelected(device);
-                }
-                //dismiss();
-            }
-        });*/
     }
 
     public void setSelectedDevice(BluetoothDevice deviceIn){

@@ -25,6 +25,25 @@ public class SelectedDeviceListAdapter extends BaseAdapter {
         mContext = context;
     }
 
+    public void addAllDevices(ArrayList<BluetoothDevice> arrayIn){
+        if(arrayIn == null || mLeDevices == null){
+            return;
+        }else {
+            boolean found = false;
+            for(int i =0; i < arrayIn.size(); i++){
+                for(int j = 0; j < mLeDevices.size(); j++){
+                    if(arrayIn.get(i).getAddress().equalsIgnoreCase(mLeDevices.get(j).getDevice().getAddress())){
+                        found = true;
+                    }
+                }
+                if(!found){
+                    addDevice(arrayIn.get(i));
+                }
+                found = false;
+            }
+        }
+    }
+
     public void addDevice(BluetoothDevice device) {
         if(!mLeDevices.contains(device)) {
             mLeDevices.add(new BluetoothDeviceItem(device));

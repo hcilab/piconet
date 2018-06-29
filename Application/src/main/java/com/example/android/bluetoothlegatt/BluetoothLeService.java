@@ -593,6 +593,16 @@ public class BluetoothLeService extends Service {
         return null;
     }
 
+    public ArrayList<BluetoothDevice> getAllDevices(){
+        ArrayList<BluetoothDevice> arrayOut = new ArrayList<BluetoothDevice>();
+        Log.d(TAG, "Connected devices: ");
+        for(int i = 0; i < mBluetoothGatt.size(); i++){
+            Log.d(TAG,mBluetoothGatt.get(i).getDevice().getAddress());
+            arrayOut.add(mBluetoothGatt.get(i).getDevice());
+        }
+        return arrayOut;
+    }
+
     public boolean isConnected(String address){
         int deviceNum = getDeviceNumber(address);
         if(deviceNum < 0)
