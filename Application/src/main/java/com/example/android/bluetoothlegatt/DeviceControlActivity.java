@@ -16,9 +16,13 @@
 
 package com.example.android.bluetoothlegatt;
 
+import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
+import android.bluetooth.BluetoothManager;
+import android.bluetooth.BluetoothProfile;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -57,13 +61,13 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
     public static final String EXTRAS_DEVICE_NAME = "DEVICE_NAME";
     public static final String EXTRAS_DEVICE_ADDRESS = "DEVICE_ADDRESS";
 
-    private TextView mConnectionState;
-    private TextView mDataField;
-    private String mDeviceName;
     private String mDeviceAddress;
     private ArrayList<String> mDeviceAddresses;
     private ExpandableListView mGattServicesList;
     private BluetoothLeService mBluetoothLeService;
+    private BluetoothAdapter mBluetoothAdapter;
+    private static final int REQUEST_ENABLE_BT = 1;
+
     private ArrayList<ArrayList<BluetoothGattCharacteristic>> mGattCharacteristics =
             new ArrayList<ArrayList<BluetoothGattCharacteristic>>();
     private boolean mConnected = false;
@@ -85,15 +89,13 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
             String deviceAddress = bluetoothDevice.getAddress();
             mDeviceAddresses.add(deviceAddress);
             mSelectedDeviceListAdapter.addDevice(bluetoothDevice);
-            int deviceConnectionStatus = BluetoothLeService.STATE_DISCONNECTED;
-            if (mBluetoothLeService.isConnected(deviceAddress)) {
-                deviceConnectionStatus = BluetoothLeService.STATE_CONNECTED;
-            }
+            int deviceConnectionStatus = mBluetoothLeService.getConnectionStatus(deviceAddress);
             mSelectedDeviceListAdapter.setDeviceState(deviceAddress, deviceConnectionStatus);
-            mSelectedDeviceListAdapter.notifyDataSetChanged();
             //Toast.makeText(this, deviceName+" at address: "+deviceAddress+" clicked", Toast.LENGTH_SHORT).show();
             if (mBluetoothLeService != null) {
-                final boolean result = mBluetoothLeService.connect(deviceAddress);
+                ArrayList<String> arr = new ArrayList<String>();
+                arr.add(deviceAddress);
+                final boolean result = mBluetoothLeService.connect(arr);
                 Log.d(TAG, "Connect request result=" + result);
                 //btFragment.dismiss();
             }
@@ -112,10 +114,12 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
                 finish();
             }
             // Automatically connects to the device upon successful start-up initialization.
-            mBluetoothLeService.connect(mDeviceAddress);
+            ArrayList<String> arr = new ArrayList<String>();
+            arr.add(mDeviceAddress);
+            mBluetoothLeService.connect(arr);
             BluetoothDevice selectedDevice = mBluetoothLeService.getDevice(mDeviceAddress);
             onDeviceSelected(selectedDevice);
-            mSelectedDeviceListAdapter.addAllDevices(mBluetoothLeService.getAllDevices());
+            mSelectedDeviceListAdapter.addAllDevices(mBluetoothLeService.getAllDeviceItems());
         }
 
         @Override
@@ -131,27 +135,29 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
     // ACTION_GATT_SERVICES_DISCOVERED: discovered GATT services.
     // ACTION_DATA_AVAILABLE: received data from the device.  This can be a result of read
     //                        or notification operations.
+
+    //TODO: Transfer connection control over to service so it can be dynamically updated
     private final BroadcastReceiver mGattUpdateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             final String action = intent.getAction();
             String deviceAddress = intent.getStringExtra(BluetoothLeService.DEVICE_ADDRESS);
             if (BluetoothLeService.ACTION_GATT_CONNECTED.equals(action)) {
-                mConnected = true;
-                if(deviceAddress.equals(mDeviceAddress))
-                    updateConnectionState(R.string.connected);
                 invalidateOptionsMenu();
-                updateConnectionButton(deviceAddress,action);
+                mSelectedDeviceListAdapter.updateConnectionButton(deviceAddress,action);
                 Log.d(TAG, "onReceive: "+deviceAddress+" connected");
             } else if (BluetoothLeService.ACTION_GATT_DISCONNECTED.equals(action)) {
-                mConnected = false;
-                if(deviceAddress.equals(mDeviceAddress))
-                    updateConnectionState(R.string.disconnected);
                 invalidateOptionsMenu();
                 clearUI();
                 commSwitch();   //Stop notification on Rx
-                updateConnectionButton(deviceAddress,action);
+                mSelectedDeviceListAdapter.updateConnectionButton(deviceAddress,action);
                 Log.d(TAG, "onReceive: "+deviceAddress+" disconnected");
+            } else if (BluetoothLeService.ACTION_GATT_CONNECTING.equals(action)) {
+                invalidateOptionsMenu();
+                clearUI();
+                mSelectedDeviceListAdapter.setDeviceState(deviceAddress,BluetoothLeService.STATE_CONNECTING);
+                mSelectedDeviceListAdapter.updateConnectionButton(deviceAddress,action);
+                Log.d(TAG, "onReceive: Connecting state: "+mSelectedDeviceListAdapter.getDeviceState(deviceAddress));
             } else if (BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED.equals(action)) {
                 // Show all the supported services and characteristics on the user interface.
                 displayGattServices(mBluetoothLeService.getSupportedGattServices(mDeviceAddress));
@@ -200,7 +206,7 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
 
     private void clearUI() {
         mGattServicesList.setAdapter((SimpleExpandableListAdapter) null);
-        mDataField.setText(R.string.no_data);
+        //mDataField.setText(R.string.no_data);
     }
 
     @Override
@@ -208,21 +214,26 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gatt_services_characteristics);
 
+        final BluetoothManager bluetoothManager =
+                (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
+        mBluetoothAdapter = bluetoothManager.getAdapter();
+
         mDeviceAddresses = new ArrayList<String>();
 
         // Sets up UI references.
-        ((TextView) findViewById(R.id.device_address)).setText("Please scan for devices (press 'scan' in the menu)");
+
         mGattServicesList = (ExpandableListView) findViewById(R.id.gatt_services_list);
         mGattServicesList.setOnChildClickListener(servicesListClickListner);
-        mConnectionState = (TextView) findViewById(R.id.connection_state);
-        mDataField = (TextView) findViewById(R.id.data_value);
+        //mDataField = (TextView) findViewById(R.id.data_value);*/
 
-        getActionBar().setTitle("Piconet");
+        getActionBar().setTitle("Paired devices");
         getActionBar().setDisplayHomeAsUpEnabled(false);
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
         mDeviceList = findViewById(R.id.selected_device_list);
+        TextView emptyList = (TextView) findViewById(R.id.empty);
+        mDeviceList.setEmptyView(emptyList);
         mSelectedDeviceListAdapter = new SelectedDeviceListAdapter(this);
 
         mDeviceList.setAdapter(mSelectedDeviceListAdapter);
@@ -241,20 +252,8 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
     public void setSelectedDevice(BluetoothDevice deviceIn){
         if(deviceIn == null){
             mDeviceAddress = null;
-            mDeviceName = null;
-            ((TextView) findViewById(R.id.device_address)).setText("Please select a device (press 'scan' in the menu)");
         }else {
             mDeviceAddress = deviceIn.getAddress();
-            mDeviceName = deviceIn.getName();
-            ((TextView) findViewById(R.id.device_address)).setText(mDeviceAddress);
-        }
-
-        if(mBluetoothLeService.isConnected(mDeviceAddress)) {
-            updateConnectionState(R.string.connected);
-            mConnected = true;
-        }else{
-            updateConnectionState(R.string.disconnected);
-            mConnected = false;
         }
         displayGattServices(mBluetoothLeService.getSupportedGattServices(mDeviceAddress));
     }
@@ -262,11 +261,27 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
     @Override
     protected void onResume() {
         super.onResume();
+        if (!mBluetoothAdapter.isEnabled()) {
+            if (!mBluetoothAdapter.isEnabled()) {
+                Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+            }
+        }
         registerReceiver(mGattUpdateReceiver, makeGattUpdateIntentFilter());
         if (mBluetoothLeService != null) {
             final boolean result = mBluetoothLeService.connect(mDeviceAddresses);
             Log.d(TAG, "Connect request result=" + result);
         }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        // User chose not to enable Bluetooth.
+        if (requestCode == REQUEST_ENABLE_BT && resultCode == Activity.RESULT_CANCELED) {
+            finish();
+            return;
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
@@ -285,29 +300,12 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.gatt_services, menu);
-        /*
-        if (mConnected) {
-            menu.findItem(R.id.menu_connect).setVisible(false);
-            menu.findItem(R.id.menu_disconnect).setVisible(true);
-        } else {
-            menu.findItem(R.id.menu_connect).setVisible(true);
-            menu.findItem(R.id.menu_disconnect).setVisible(false);
-        }
-        */
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()) {
-            /*
-            case R.id.menu_connect:
-                mBluetoothLeService.connect(mDeviceAddress);
-                return true;
-            case R.id.menu_disconnect:
-                mBluetoothLeService.disconnect(mDeviceAddresses);
-                return true;
-                */
             case R.id.menu_scan:
                 btFragment = new BluetoothDialogFragment();
                 btFragment.show(getSupportFragmentManager(), "Bluetooth");
@@ -319,18 +317,9 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         return super.onOptionsItemSelected(item);
     }
 
-    private void updateConnectionState(final int resourceId) {
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                mConnectionState.setText(resourceId);
-            }
-        });
-    }
-
     private void displayData(String data) {
         if (data != null) {
-            mDataField.setText(data);
+            //mDataField.setText(data);
             Log.d(TAG, "displayData: "+data);
         }
     }
@@ -400,6 +389,7 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
     private static IntentFilter makeGattUpdateIntentFilter() {
         final IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(BluetoothLeService.ACTION_GATT_CONNECTED);
+        intentFilter.addAction(BluetoothLeService.ACTION_GATT_CONNECTING);
         intentFilter.addAction(BluetoothLeService.ACTION_GATT_DISCONNECTED);
         intentFilter.addAction(BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED);
         intentFilter.addAction(BluetoothLeService.ACTION_DATA_AVAILABLE);
@@ -464,7 +454,12 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         Log.d(TAG, "connectButtonClicked: Address "+address);
         ArrayList<String> arr = new ArrayList<String>();
         arr.add(address);
-        if (mBluetoothLeService.isConnected(address)){
+        int status = mSelectedDeviceListAdapter.getDeviceState(address);//mBluetoothLeService.getConnectionStatus(address);
+        Log.d(TAG, "connectButtonClicked: Connection state "+status);
+        if (status > BluetoothProfile.STATE_DISCONNECTED){
+            if(status == BluetoothProfile.STATE_CONNECTING){
+                Log.d(TAG, "connectButtonClicked: Connecting");
+            }
             mBluetoothLeService.disconnect(arr);
         }else {
             mBluetoothLeService.connect(arr);
@@ -475,7 +470,6 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         Log.d(TAG, "forgetButtonClicked: Address "+address);
         mBluetoothLeService.removeDevice(address);
         mSelectedDeviceListAdapter.removeItem(address);
-        mSelectedDeviceListAdapter.notifyDataSetChanged();
         
         int removed = 0;
         for(int i = 0; i < mDeviceAddresses.size(); i++){
@@ -493,20 +487,5 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         }
     }
 
-    public void updateConnectionButton(String address, String state){
-        if(state.equals(BluetoothLeService.ACTION_GATT_CONNECTED)) {
-            mSelectedDeviceListAdapter.setDeviceState(address,BluetoothLeService.STATE_CONNECTED);
-            //Toast.makeText(this, address + " connected", Toast.LENGTH_SHORT).show();
-            Log.d(TAG, "updateConnectionButton: "+address + " connected");
-        }else if(state.equals(BluetoothLeService.ACTION_GATT_DISCONNECTED)){
-            mSelectedDeviceListAdapter.setDeviceState(address,BluetoothLeService.STATE_DISCONNECTED);
-            //Toast.makeText(this, address + " disconnected", Toast.LENGTH_SHORT).show();
-            Log.d(TAG, "updateConnectionButton: "+address + " disconnecting");
-        }else if(state.equals(BluetoothLeService.ACTION_GATT_CONNECTING)){
-            mSelectedDeviceListAdapter.setDeviceState(address,BluetoothLeService.STATE_CONNECTING);
-            //Toast.makeText(this, address + " connecting", Toast.LENGTH_SHORT).show();
-            Log.d(TAG, "updateConnectionButton: "+address + " connecting");
-        }
-        mSelectedDeviceListAdapter.notifyDataSetChanged();
-    }
+
 }

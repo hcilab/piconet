@@ -25,28 +25,30 @@ public class SelectedDeviceListAdapter extends BaseAdapter {
         mContext = context;
     }
 
-    public void addAllDevices(ArrayList<BluetoothDevice> arrayIn){
+    public void addAllDevices(ArrayList<BluetoothDeviceItem> arrayIn){
         if(arrayIn == null || mLeDevices == null){
             return;
         }else {
             boolean found = false;
             for(int i =0; i < arrayIn.size(); i++){
                 for(int j = 0; j < mLeDevices.size(); j++){
-                    if(arrayIn.get(i).getAddress().equalsIgnoreCase(mLeDevices.get(j).getDevice().getAddress())){
+                    if(arrayIn.get(i).getDevice().getAddress().equalsIgnoreCase(mLeDevices.get(j).getDevice().getAddress())){
                         found = true;
                     }
                 }
                 if(!found){
-                    addDevice(arrayIn.get(i));
+                    mLeDevices.add(arrayIn.get(i));
                 }
                 found = false;
             }
         }
+        notifyDataSetChanged();
     }
 
     public void addDevice(BluetoothDevice device) {
         if(!mLeDevices.contains(device)) {
             mLeDevices.add(new BluetoothDeviceItem(device));
+            notifyDataSetChanged();
         }
     }
 
@@ -158,44 +160,6 @@ public class SelectedDeviceListAdapter extends BaseAdapter {
         }
     }
 
-    private class BluetoothDeviceItem{
-        BluetoothDevice device;
-        int connectionState;
-
-        public BluetoothDeviceItem(BluetoothDevice deviceIn){
-            device = deviceIn;
-            connectionState = 0;
-        }
-
-        public BluetoothDevice getDevice() {
-            return device;
-        }
-
-        public int getConnectionState() {
-            return connectionState;
-        }
-
-        public void setConnectionState(int newState){
-             connectionState = newState;
-        }
-    }
-    /*
-    class CustomOnClickListener implements View.OnClickListener
-    {
-
-        int position;
-        public CustomOnClickListener(int positionIn) {
-            position = positionIn;
-        }
-
-        @Override
-        public void onClick(View v)
-        {
-            Log.d(TAG, "Button clicked, position: "+ Integer.toString(position));
-        }
-
-    }*/
-
     public void setButtonText(String address){
 
         int pos = getItemPosition(address);
@@ -208,20 +172,49 @@ public class SelectedDeviceListAdapter extends BaseAdapter {
             case BluetoothLeService.STATE_CONNECTED:
                 return "Connected";
             case BluetoothLeService.STATE_CONNECTING:
-                return "Connecting";
+                return "Connecting...";
         }
         return "";
     }
 
     public void removeItem(String address){
         int pos = getItemPosition(address);
-        if(pos >= 0)
+        if(pos >= 0) {
             mLeDevices.remove(pos);
+            notifyDataSetChanged();
+        }
     }
 
     public void setDeviceState(String address, int state){
         int position = getItemPosition(address);
-        if(position >= 0)
+        if(position >= 0) {
             mLeDevices.get(position).setConnectionState(state);
+            notifyDataSetChanged();
+        }
+    }
+
+    public int getDeviceState(String address){
+        int position = getItemPosition(address);
+        if(position >= 0) {
+            return mLeDevices.get(position).getConnectionState();
+        }
+        return -1;
+    }
+
+    public void updateConnectionButton(String address, String state){
+        if(state.equals(BluetoothLeService.ACTION_GATT_CONNECTED)) {
+            setDeviceState(address,BluetoothLeService.STATE_CONNECTED);
+            //Toast.makeText(this, address + " connected", Toast.LENGTH_SHORT).show();
+            Log.d(TAG, "updateConnectionButton: "+address + " connected");
+        }else if(state.equals(BluetoothLeService.ACTION_GATT_DISCONNECTED)){
+            setDeviceState(address,BluetoothLeService.STATE_DISCONNECTED);
+            //Toast.makeText(this, address + " disconnected", Toast.LENGTH_SHORT).show();
+            Log.d(TAG, "updateConnectionButton: "+address + " disconnecting");
+        }else if(state.equals(BluetoothLeService.ACTION_GATT_CONNECTING)){
+            setDeviceState(address,BluetoothLeService.STATE_CONNECTING);
+            //Toast.makeText(this, address + " connecting", Toast.LENGTH_SHORT).show();
+            Log.d(TAG, "updateConnectionButton: "+address + " connecting");
+        }
+        notifyDataSetChanged();
     }
 }

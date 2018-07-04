@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:20:1-54:12
-INJECTED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:20:1-54:12
-INJECTED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:20:1-54:12
+ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:20:1-58:12
+INJECTED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:20:1-58:12
+INJECTED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:20:1-58:12
 MERGED from [com.android.support:support-v13:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v13-27.0.2.aar\2d8a043a34e80c74eb1aa60118721e95\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.0.2.aar\66e1a513e1eb6a3019b04d501c37bbed\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.0.2.aar\a1fe009c5d09186ab4935e764a9d2eaf\AndroidManifest.xml:17:1-22:12
@@ -15,8 +15,8 @@ MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\user\.gradle\c
 MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\df6bda7135b482e46fd2ea3b22b1644d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\0e859cae34cbb3586de32f7c2f593b69\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\671c859e7e3e86fbd4ae0db9acbcf8a1\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:20:1-54:12
-INJECTED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:20:1-54:12
+INJECTED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:20:1-58:12
+INJECTED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:20:1-58:12
 	package
 		ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:21:5-50
 	android:versionName
@@ -52,7 +52,7 @@ ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:36:22-76
 application
-ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:38:5-52:19
+ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:38:5-56:19
 	android:label
 		ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:38:18-50
 	android:icon
@@ -75,12 +75,18 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:48:17-76
 	android:name
 		ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:48:27-74
-service#com.example.android.bluetoothlegatt.BluetoothLeService
-ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:51:9-77
-	android:enabled
-		ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:51:53-75
+activity#com.example.android.bluetoothlegatt.MainActivity
+ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:51:9-54:20
+	android:label
+		ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:53:13-56
 	android:name
-		ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:51:18-52
+		ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:52:13-41
+service#com.example.android.bluetoothlegatt.BluetoothLeService
+ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:55:9-77
+	android:enabled
+		ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:55:53-75
+	android:name
+		ADDED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml:55:18-52
 uses-sdk
 INJECTED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\user\androidRepos\android-BLE\Application\src\main\AndroidManifest.xml
