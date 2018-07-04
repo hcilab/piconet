@@ -1,21 +1,21 @@
 
-Android BluetoothLeGatt Sample
+Android Piconet Sample
 ===================================
 
 This sample demonstrates how to use the Bluetooth LE Generic Attribute Profile (GATT)
-to transmit arbitrary data between devices.
+to connect to multiple Bluetooth LE devices. It can serve as a connectivity module for BLE apps.
 
 Introduction
 ------------
 
 This sample shows a list of available Bluetooth LE devices and provides
-an interface to connect, display data and display GATT services and
-characteristics supported by the devices.
+an interface to connect and display GATT services/characteristics supported by the devices.
 
-It creates a [Service][1] for managing connection and data communication with a GATT server
-hosted on a given Bluetooth LE device.
 
-The Activities communicate with the Service, which in turn interacts with the [Bluetooth LE API][2].
+It creates a [Service][1] for managing connections and data communication with GATT servers
+hosted on various Bluetooth LE devices. Data communication methods are provided but not triggered in this sample.
+
+The Activity communicates with the Service, which in turn interacts with the [Bluetooth LE API][2].
 
 [1]:http://developer.android.com/reference/android/app/Service.html
 [2]:https://developer.android.com/reference/android/bluetooth/BluetoothGatt.html
@@ -30,7 +30,7 @@ Pre-requisites
 Screenshots
 -------------
 
-<img src="screenshots/1-main.png" height="400" alt="Screenshot"/> <img src="screenshots/2-detail.png" height="400" alt="Screenshot"/> 
+<img src="screenshots/Screenshot_1.png" height="400" alt="Screenshot"/> <img src="screenshots/Screenshot_2.png" height="400" alt="Screenshot"/> 
 
 Getting Started
 ---------------
@@ -38,22 +38,10 @@ Getting Started
 This sample uses the Gradle build system. To build this project, use the
 "gradlew build" command or use "Import Project" in Android Studio.
 
-Support
--------
-
-- Google+ Community: https://plus.google.com/communities/105153134372062985968
-- Stack Overflow: http://stackoverflow.com/questions/tagged/android
-
-If you've found an error in this sample, please file an issue:
-https://github.com/googlesamples/android-BluetoothLeGatt
-
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
-
 License
 -------
 
-Copyright 2017 The Android Open Source Project, Inc.
+Copyright 2018 The Android Open Source Project, Inc.
 
 Licensed to the Apache Software Foundation (ASF) under one or more contributor
 license agreements.  See the NOTICE file distributed with this work for
