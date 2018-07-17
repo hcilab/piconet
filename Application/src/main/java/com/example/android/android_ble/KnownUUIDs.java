@@ -14,6 +14,7 @@ public class KnownUUIDs extends StandardUUIDs {
         Map<String, String> aMap = new HashMap<>();
 
         aMap.put("0000febb-0000-1000-8000-00805f9b34fb".toUpperCase(), "Adafruit Unified Sensor");
+        aMap.put("0000ccc0-0000-1000-8000-00805f9b34fb".toUpperCase(), "Cane Service");
         aMap.put(BluetoothLeService.UUID_SERVICE.toUpperCase(), "Nordic UART");
         aMap.put("00001530-1212-efde-1523-785feabcd123".toUpperCase(), "Nordic Device Firmware Update Service");
         aMap.put("ee0c2080-8786-40ba-ab96-99b91ac981d8".toUpperCase(), "Eddystone-URL Config Service");
@@ -60,7 +61,22 @@ public class KnownUUIDs extends StandardUUIDs {
         // Newtmgr
         aMap.put("DA2E7828-FBCE-4E01-AE9E-261174997C48".toUpperCase(), "Newtmgr Characteristic");
 
+        //Mobile health devices
+        aMap.put("0000ccc0-0000-1000-8000-00805f9b34fb".toUpperCase(), "Cane IMU and Load Data");
+
         sCharacteristicUUIDs = Collections.unmodifiableMap(aMap);
+    }
+
+    // Characteristic UUIDs to be automatically set with notifications
+    private static final Map<String, String> notifiableCharacteristicUUIDs;
+
+    static {
+        Map<String, String> aMap = new HashMap<>();
+
+        //Mobile health devices
+        aMap.put("0000ccc1-0000-1000-8000-00805f9b34fb".toUpperCase(), "Cane IMU and Load Data");
+
+        notifiableCharacteristicUUIDs = Collections.unmodifiableMap(aMap);
     }
 
     // Descriptors UUIDs
@@ -108,5 +124,17 @@ public class KnownUUIDs extends StandardUUIDs {
         }
 
         return result;
+    }
+
+    public static boolean checkNotifiable(String uuid){
+        String result;
+
+        uuid = uuid.toUpperCase();  // To avoid problems with lowercase/uppercase
+        result = notifiableCharacteristicUUIDs.get(uuid);
+        if (result == null) {
+            return false;
+        }
+
+        return true;
     }
 }

@@ -42,7 +42,6 @@ import android.widget.ExpandableListView;
 import android.widget.ListView;
 import android.widget.SimpleExpandableListAdapter;
 import android.widget.TextView;
-import android.widget.Button;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -164,7 +163,6 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
                 Log.d(TAG, "onReceive: Services discovered!");
                 commSwitch();   //Start notifications on Rx
             } else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
-                displayData(intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
                 Log.d(TAG, "onReceive: Data available!");
             }
         }
@@ -227,7 +225,7 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         //mDataField = (TextView) findViewById(R.id.data_value);*/
 
         getActionBar().setTitle("Paired devices");
-        getActionBar().setDisplayHomeAsUpEnabled(false);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         Intent gattServiceIntent = new Intent(this, BluetoothLeService.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
@@ -317,10 +315,25 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         return super.onOptionsItemSelected(item);
     }
 
-    private void displayData(String data) {
+    private void parseData(byte[] data) {
         if (data != null) {
-            //mDataField.setText(data);
-            Log.d(TAG, "displayData: "+data);
+            if(data.length < 1)
+                return;
+
+            KinematicData canedata = DataRead.translateData(data, System.currentTimeMillis());
+            Log.d(TAG, "parseData: canedata: "+ canedata.toString());
+            /*
+            byte[] byteArr = new byte[16];
+            byte[] temp = new byte[2];
+            final StringBuilder str = new StringBuilder(data.length);
+            for(int i = 0; i < 2; i = i+2){
+                temp[i] = data[i];
+                str.append(String.format("%02X ", data[i]));
+            }
+            Log.d(TAG, "parseData: raw "+(str));
+            ByteBuffer buff = ByteBuffer.wrap(temp);
+            Log.d(TAG, "parseData: int "+buff.getShort());
+            */
         }
     }
 
@@ -409,6 +422,7 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         }
     }
 
+    /*
     public void commSwitch(View v){
         if(mBluetoothLeService != null) {
             try {
@@ -426,7 +440,7 @@ public class DeviceControlActivity extends FragmentActivity implements Bluetooth
         }
 
         }
-    }
+    }*/
     public void commSwitch(){
         /*if(mBluetoothLeService != null) {
             boolean switchSuccessful = mBluetoothLeService.changeUartComms(mUartConnected);

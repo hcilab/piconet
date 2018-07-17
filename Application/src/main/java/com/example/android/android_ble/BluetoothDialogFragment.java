@@ -1,6 +1,7 @@
 package com.example.android.bluetoothlegatt;
 
 import android.Manifest;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -11,10 +12,12 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.app.DialogFragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
@@ -41,12 +44,16 @@ public class BluetoothDialogFragment extends android.support.v4.app.DialogFragme
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         LayoutInflater layoutInflater
                 = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View rootView =layoutInflater.inflate(R.layout.bluetooth_dialog_fragment,null);
-
+        rootView =layoutInflater.inflate(R.layout.bluetooth_dialog_fragment,null);
         mHandler = new Handler();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -95,14 +102,14 @@ public class BluetoothDialogFragment extends android.support.v4.app.DialogFragme
         return builder.create();
 
     }
-
+/*
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        rootView = inflater.inflate(R.layout.bluetooth_dialog_fragment, container, false);
-        return rootView;
+        //rootView = inflater.inflate(R.layout.bluetooth_dialog_fragment, container, false);
+        //return rootView;
     }
-
+*/
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);

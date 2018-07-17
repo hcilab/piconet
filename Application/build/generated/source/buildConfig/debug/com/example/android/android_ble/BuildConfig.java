@@ -1,7 +1,7 @@
 /**
  * Automatically generated file. DO NOT MODIFY
  */
-package com.example.android.bluetoothlegatt;
+package com.example.android.android_ble;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");

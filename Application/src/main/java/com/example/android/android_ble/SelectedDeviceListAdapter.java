@@ -2,6 +2,7 @@ package com.example.android.bluetoothlegatt;
 
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -135,7 +136,13 @@ public class SelectedDeviceListAdapter extends BaseAdapter {
         viewHolder.forgetDevice.setOnClickListener(mOnForgetClickListener);
 
         viewHolder.connectDevice.setText(getStateText(mLeDevices.get(i).getConnectionState()));
-
+        if(mLeDevices.get(i).getConnectionState() == BluetoothLeService.STATE_DISCONNECTED){
+            viewHolder.connectDevice.setBackgroundColor(Color.RED);
+        }else if(mLeDevices.get(i).getConnectionState() == BluetoothLeService.STATE_CONNECTED){
+            viewHolder.connectDevice.setBackgroundColor(Color.GREEN);
+        }else if(mLeDevices.get(i).getConnectionState() == BluetoothLeService.STATE_CONNECTING) {
+            viewHolder.connectDevice.setBackgroundColor(Color.BLUE);
+        }
         return view;
     }
 

@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.android.bluetoothlegatt;
+package com.example.android.android_ble;
 
 public final class R {
   public static final class anim {
@@ -2422,82 +2422,86 @@ public final class R {
     public static final int forever=0x7f070036;
     public static final int forget_device=0x7f070037;
     public static final int gatt_services_list=0x7f070038;
-    public static final int home=0x7f070039;
-    public static final int homeAsUp=0x7f07003a;
-    public static final int icon=0x7f07003b;
-    public static final int icon_group=0x7f07003c;
-    public static final int ifRoom=0x7f07003d;
-    public static final int image=0x7f07003e;
-    public static final int info=0x7f07003f;
-    public static final int italic=0x7f070040;
-    public static final int line1=0x7f070041;
-    public static final int line3=0x7f070042;
-    public static final int listMode=0x7f070043;
-    public static final int list_item=0x7f070044;
-    public static final int media_actions=0x7f070045;
-    public static final int menu_devices=0x7f070046;
-    public static final int menu_scan=0x7f070047;
-    public static final int message=0x7f070048;
-    public static final int middle=0x7f070049;
-    public static final int multiply=0x7f07004a;
-    public static final int never=0x7f07004b;
-    public static final int none=0x7f07004c;
-    public static final int normal=0x7f07004d;
-    public static final int notification_background=0x7f07004e;
-    public static final int notification_main_column=0x7f07004f;
-    public static final int notification_main_column_container=0x7f070050;
-    public static final int parentPanel=0x7f070051;
-    public static final int progress_circular=0x7f070052;
-    public static final int progress_horizontal=0x7f070053;
-    public static final int radio=0x7f070054;
-    public static final int right_icon=0x7f070055;
-    public static final int right_side=0x7f070056;
-    public static final int scan_button=0x7f070057;
-    public static final int screen=0x7f070058;
-    public static final int scrollIndicatorDown=0x7f070059;
-    public static final int scrollIndicatorUp=0x7f07005a;
-    public static final int scrollView=0x7f07005b;
-    public static final int search_badge=0x7f07005c;
-    public static final int search_bar=0x7f07005d;
-    public static final int search_button=0x7f07005e;
-    public static final int search_close_btn=0x7f07005f;
-    public static final int search_edit_frame=0x7f070060;
-    public static final int search_go_btn=0x7f070061;
-    public static final int search_mag_icon=0x7f070062;
-    public static final int search_plate=0x7f070063;
-    public static final int search_src_text=0x7f070064;
-    public static final int search_voice_btn=0x7f070065;
-    public static final int select_dialog_listview=0x7f070066;
-    public static final int selected_device_list=0x7f070067;
-    public static final int shortcut=0x7f070068;
-    public static final int showCustom=0x7f070069;
-    public static final int showHome=0x7f07006a;
-    public static final int showTitle=0x7f07006b;
-    public static final int spacer=0x7f07006c;
-    public static final int split_action_bar=0x7f07006d;
-    public static final int src_atop=0x7f07006e;
-    public static final int src_in=0x7f07006f;
-    public static final int src_over=0x7f070070;
-    public static final int status_bar_latest_event_content=0x7f070071;
-    public static final int submenuarrow=0x7f070072;
-    public static final int submit_area=0x7f070073;
-    public static final int tabMode=0x7f070074;
-    public static final int tag_transition_group=0x7f070075;
-    public static final int text=0x7f070076;
-    public static final int text2=0x7f070077;
-    public static final int textSpacerNoButtons=0x7f070078;
-    public static final int textSpacerNoTitle=0x7f070079;
-    public static final int time=0x7f07007a;
-    public static final int title=0x7f07007b;
-    public static final int titleDividerNoCustom=0x7f07007c;
-    public static final int title_template=0x7f07007d;
-    public static final int top=0x7f07007e;
-    public static final int topPanel=0x7f07007f;
-    public static final int uniform=0x7f070080;
-    public static final int up=0x7f070081;
-    public static final int useLogo=0x7f070082;
-    public static final int withText=0x7f070083;
-    public static final int wrap_content=0x7f070084;
+    public static final int get_count_button=0x7f070039;
+    public static final int home=0x7f07003a;
+    public static final int homeAsUp=0x7f07003b;
+    public static final int icon=0x7f07003c;
+    public static final int icon_group=0x7f07003d;
+    public static final int ifRoom=0x7f07003e;
+    public static final int image=0x7f07003f;
+    public static final int info=0x7f070040;
+    public static final int italic=0x7f070041;
+    public static final int line1=0x7f070042;
+    public static final int line3=0x7f070043;
+    public static final int listMode=0x7f070044;
+    public static final int list_item=0x7f070045;
+    public static final int media_actions=0x7f070046;
+    public static final int menu_devices=0x7f070047;
+    public static final int menu_export=0x7f070048;
+    public static final int menu_scan=0x7f070049;
+    public static final int message=0x7f07004a;
+    public static final int middle=0x7f07004b;
+    public static final int multiply=0x7f07004c;
+    public static final int never=0x7f07004d;
+    public static final int none=0x7f07004e;
+    public static final int normal=0x7f07004f;
+    public static final int notification_background=0x7f070050;
+    public static final int notification_main_column=0x7f070051;
+    public static final int notification_main_column_container=0x7f070052;
+    public static final int parentPanel=0x7f070053;
+    public static final int part_id=0x7f070054;
+    public static final int progress_circular=0x7f070055;
+    public static final int progress_horizontal=0x7f070056;
+    public static final int radio=0x7f070057;
+    public static final int recording_button=0x7f070058;
+    public static final int right_icon=0x7f070059;
+    public static final int right_side=0x7f07005a;
+    public static final int scan_button=0x7f07005b;
+    public static final int screen=0x7f07005c;
+    public static final int scrollIndicatorDown=0x7f07005d;
+    public static final int scrollIndicatorUp=0x7f07005e;
+    public static final int scrollView=0x7f07005f;
+    public static final int search_badge=0x7f070060;
+    public static final int search_bar=0x7f070061;
+    public static final int search_button=0x7f070062;
+    public static final int search_close_btn=0x7f070063;
+    public static final int search_edit_frame=0x7f070064;
+    public static final int search_go_btn=0x7f070065;
+    public static final int search_mag_icon=0x7f070066;
+    public static final int search_plate=0x7f070067;
+    public static final int search_src_text=0x7f070068;
+    public static final int search_voice_btn=0x7f070069;
+    public static final int select_dialog_listview=0x7f07006a;
+    public static final int selected_device_list=0x7f07006b;
+    public static final int shortcut=0x7f07006c;
+    public static final int showCustom=0x7f07006d;
+    public static final int showHome=0x7f07006e;
+    public static final int showTitle=0x7f07006f;
+    public static final int spacer=0x7f070070;
+    public static final int split_action_bar=0x7f070071;
+    public static final int src_atop=0x7f070072;
+    public static final int src_in=0x7f070073;
+    public static final int src_over=0x7f070074;
+    public static final int status_bar_latest_event_content=0x7f070075;
+    public static final int submenuarrow=0x7f070076;
+    public static final int submit_area=0x7f070077;
+    public static final int tabMode=0x7f070078;
+    public static final int tag_transition_group=0x7f070079;
+    public static final int text=0x7f07007a;
+    public static final int text2=0x7f07007b;
+    public static final int textSpacerNoButtons=0x7f07007c;
+    public static final int textSpacerNoTitle=0x7f07007d;
+    public static final int time=0x7f07007e;
+    public static final int title=0x7f07007f;
+    public static final int titleDividerNoCustom=0x7f070080;
+    public static final int title_template=0x7f070081;
+    public static final int top=0x7f070082;
+    public static final int topPanel=0x7f070083;
+    public static final int uniform=0x7f070084;
+    public static final int up=0x7f070085;
+    public static final int useLogo=0x7f070086;
+    public static final int withText=0x7f070087;
+    public static final int wrap_content=0x7f070088;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;
@@ -2609,16 +2613,17 @@ public final class R {
     public static final int menu_connect=0x7f0b0029;
     public static final int menu_devices=0x7f0b002a;
     public static final int menu_disconnect=0x7f0b002b;
-    public static final int menu_scan=0x7f0b002c;
-    public static final int menu_stop=0x7f0b002d;
-    public static final int no_data=0x7f0b002e;
-    public static final int search_menu_title=0x7f0b002f;
-    public static final int status_bar_notification_info_overflow=0x7f0b0030;
-    public static final int title_activity_main=0x7f0b0031;
-    public static final int title_devices=0x7f0b0032;
-    public static final int unknown_characteristic=0x7f0b0033;
-    public static final int unknown_device=0x7f0b0034;
-    public static final int unknown_service=0x7f0b0035;
+    public static final int menu_export=0x7f0b002c;
+    public static final int menu_scan=0x7f0b002d;
+    public static final int menu_stop=0x7f0b002e;
+    public static final int no_data=0x7f0b002f;
+    public static final int search_menu_title=0x7f0b0030;
+    public static final int status_bar_notification_info_overflow=0x7f0b0031;
+    public static final int title_activity_main=0x7f0b0032;
+    public static final int title_devices=0x7f0b0033;
+    public static final int unknown_characteristic=0x7f0b0034;
+    public static final int unknown_device=0x7f0b0035;
+    public static final int unknown_service=0x7f0b0036;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0c0000;
@@ -3065,7 +3070,7 @@ public final class R {
         0x7f0200f6
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3077,7 +3082,7 @@ public final class R {
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3092,7 +3097,7 @@ public final class R {
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3107,7 +3112,7 @@ public final class R {
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3120,7 +3125,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3133,7 +3138,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3146,7 +3151,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3159,7 +3164,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3172,7 +3177,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3185,7 +3190,7 @@ public final class R {
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3197,7 +3202,7 @@ public final class R {
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -3219,7 +3224,7 @@ public final class R {
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3231,7 +3236,7 @@ public final class R {
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3244,7 +3249,7 @@ public final class R {
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3257,7 +3262,7 @@ public final class R {
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -3267,7 +3272,7 @@ public final class R {
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3279,7 +3284,7 @@ public final class R {
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3291,7 +3296,7 @@ public final class R {
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3303,7 +3308,7 @@ public final class R {
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3315,7 +3320,7 @@ public final class R {
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3328,7 +3333,7 @@ public final class R {
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3340,7 +3345,7 @@ public final class R {
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -3358,7 +3363,7 @@ public final class R {
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3370,7 +3375,7 @@ public final class R {
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3383,7 +3388,7 @@ public final class R {
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3395,7 +3400,7 @@ public final class R {
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -3405,7 +3410,7 @@ public final class R {
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3417,7 +3422,7 @@ public final class R {
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -3427,7 +3432,7 @@ public final class R {
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3536,7 +3541,7 @@ public final class R {
         0x7f0200d2, 0x7f0200f6
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3548,7 +3553,7 @@ public final class R {
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3563,7 +3568,7 @@ public final class R {
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3575,7 +3580,7 @@ public final class R {
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3588,7 +3593,7 @@ public final class R {
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3600,7 +3605,7 @@ public final class R {
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3628,7 +3633,7 @@ public final class R {
         0x7f020079, 0x7f020090
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3640,7 +3645,7 @@ public final class R {
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -3689,7 +3694,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3701,7 +3706,7 @@ public final class R {
      */
     public static final int AlertDialog_buttonPanelSideLayout=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3713,7 +3718,7 @@ public final class R {
      */
     public static final int AlertDialog_listItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3725,7 +3730,7 @@ public final class R {
      */
     public static final int AlertDialog_listLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3737,7 +3742,7 @@ public final class R {
      */
     public static final int AlertDialog_multiChoiceItemLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -3747,7 +3752,7 @@ public final class R {
      */
     public static final int AlertDialog_showTitle=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3794,7 +3799,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3806,7 +3811,7 @@ public final class R {
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#tint}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -3817,7 +3822,7 @@ public final class R {
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -3870,7 +3875,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3882,7 +3887,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -3893,7 +3898,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4084,7 +4089,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4097,7 +4102,7 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4110,7 +4115,7 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4122,7 +4127,7 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4135,7 +4140,7 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4152,7 +4157,7 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -4162,7 +4167,7 @@ public final class R {
      */
     public static final int AppCompatTextView_fontFamily=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4477,7 +4482,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4489,7 +4494,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4501,7 +4506,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4513,7 +4518,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4534,7 +4539,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4546,7 +4551,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4558,7 +4563,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4570,7 +4575,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4582,7 +4587,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4594,7 +4599,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4606,7 +4611,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4618,7 +4623,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4630,7 +4635,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4642,7 +4647,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4654,7 +4659,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4669,7 +4674,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4681,7 +4686,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4693,7 +4698,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4705,7 +4710,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4717,7 +4722,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4729,7 +4734,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4741,7 +4746,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4753,7 +4758,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4765,7 +4770,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4777,7 +4782,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4789,7 +4794,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4801,7 +4806,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4813,7 +4818,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4825,7 +4830,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4837,7 +4842,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4849,7 +4854,7 @@ public final class R {
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4861,7 +4866,7 @@ public final class R {
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4873,7 +4878,7 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -4883,7 +4888,7 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4895,7 +4900,7 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4907,7 +4912,7 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4919,7 +4924,7 @@ public final class R {
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4931,7 +4936,7 @@ public final class R {
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4943,7 +4948,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4955,7 +4960,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4967,7 +4972,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4979,7 +4984,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4991,7 +4996,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5003,7 +5008,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5015,7 +5020,7 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5027,7 +5032,7 @@ public final class R {
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5039,7 +5044,7 @@ public final class R {
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -5050,7 +5055,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -5061,7 +5066,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -5072,7 +5077,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -5083,7 +5088,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -5094,7 +5099,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -5105,7 +5110,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5120,7 +5125,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -5131,7 +5136,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -5142,7 +5147,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -5153,7 +5158,7 @@ public final class R {
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5165,7 +5170,7 @@ public final class R {
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5178,7 +5183,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogPreferredPadding=59;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5190,7 +5195,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogTheme=60;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5202,7 +5207,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dividerHorizontal=61;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5214,7 +5219,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dividerVertical=62;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5226,7 +5231,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dropDownListViewStyle=63;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5239,7 +5244,7 @@ public final class R {
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=64;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5251,7 +5256,7 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextBackground=65;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5266,7 +5271,7 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextColor=66;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5278,7 +5283,7 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextStyle=67;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5290,7 +5295,7 @@ public final class R {
      */
     public static final int AppCompatTheme_homeAsUpIndicator=68;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5302,7 +5307,7 @@ public final class R {
      */
     public static final int AppCompatTheme_imageButtonStyle=69;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5314,7 +5319,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=70;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5326,7 +5331,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listDividerAlertDialog=71;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5338,7 +5343,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listMenuViewStyle=72;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5350,7 +5355,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPopupWindowStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5363,7 +5368,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeight=74;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5376,7 +5381,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=75;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5389,7 +5394,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=76;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5402,7 +5407,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=77;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5415,7 +5420,7 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=78;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5427,7 +5432,7 @@ public final class R {
      */
     public static final int AppCompatTheme_panelBackground=79;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5439,7 +5444,7 @@ public final class R {
      */
     public static final int AppCompatTheme_panelMenuListTheme=80;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5452,7 +5457,7 @@ public final class R {
      */
     public static final int AppCompatTheme_panelMenuListWidth=81;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5464,7 +5469,7 @@ public final class R {
      */
     public static final int AppCompatTheme_popupMenuStyle=82;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5476,7 +5481,7 @@ public final class R {
      */
     public static final int AppCompatTheme_popupWindowStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5488,7 +5493,7 @@ public final class R {
      */
     public static final int AppCompatTheme_radioButtonStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5500,7 +5505,7 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5512,7 +5517,7 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=86;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5524,7 +5529,7 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=87;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5536,7 +5541,7 @@ public final class R {
      */
     public static final int AppCompatTheme_searchViewStyle=88;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5548,7 +5553,7 @@ public final class R {
      */
     public static final int AppCompatTheme_seekBarStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5560,7 +5565,7 @@ public final class R {
      */
     public static final int AppCompatTheme_selectableItemBackground=90;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5572,7 +5577,7 @@ public final class R {
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=91;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5584,7 +5589,7 @@ public final class R {
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=92;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5596,7 +5601,7 @@ public final class R {
      */
     public static final int AppCompatTheme_spinnerStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5608,7 +5613,7 @@ public final class R {
      */
     public static final int AppCompatTheme_switchStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5620,7 +5625,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=95;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5632,7 +5637,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItem=96;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5644,7 +5649,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=97;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5656,7 +5661,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=98;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5668,7 +5673,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=99;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5680,7 +5685,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=100;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5692,7 +5697,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=101;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5704,7 +5709,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=102;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5719,7 +5724,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=103;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5734,7 +5739,7 @@ public final class R {
      */
     public static final int AppCompatTheme_textColorSearchUrl=104;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5746,7 +5751,7 @@ public final class R {
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=105;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5758,7 +5763,7 @@ public final class R {
      */
     public static final int AppCompatTheme_toolbarStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5773,7 +5778,7 @@ public final class R {
      */
     public static final int AppCompatTheme_tooltipForegroundColor=107;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5785,7 +5790,7 @@ public final class R {
      */
     public static final int AppCompatTheme_tooltipFrameBackground=108;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -5795,7 +5800,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionBar=109;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -5805,7 +5810,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionBarOverlay=110;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -5815,7 +5820,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionModeOverlay=111;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5832,7 +5837,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=112;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5849,7 +5854,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=113;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5866,7 +5871,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=114;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5883,7 +5888,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=115;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5900,7 +5905,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowMinWidthMajor=116;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5917,7 +5922,7 @@ public final class R {
      */
     public static final int AppCompatTheme_windowMinWidthMinor=117;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -5941,7 +5946,7 @@ public final class R {
         0x7f020026
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -6018,7 +6023,7 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#cardBackgroundColor}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -6029,7 +6034,7 @@ public final class R {
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardCornerRadius}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#cardCornerRadius}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6042,7 +6047,7 @@ public final class R {
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardElevation}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#cardElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6055,7 +6060,7 @@ public final class R {
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardMaxElevation}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#cardMaxElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6068,7 +6073,7 @@ public final class R {
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardPreventCornerOverlap}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#cardPreventCornerOverlap}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -6078,7 +6083,7 @@ public final class R {
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#cardUseCompatPadding}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#cardUseCompatPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -6088,7 +6093,7 @@ public final class R {
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentPadding}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6101,7 +6106,7 @@ public final class R {
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentPaddingBottom}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6114,7 +6119,7 @@ public final class R {
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentPaddingLeft}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6127,7 +6132,7 @@ public final class R {
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentPaddingRight}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentPaddingRight}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6140,7 +6145,7 @@ public final class R {
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentPaddingTop}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentPaddingTop}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6191,7 +6196,7 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
@@ -6230,7 +6235,7 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -6241,7 +6246,7 @@ public final class R {
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6291,7 +6296,7 @@ public final class R {
         0x7f020071, 0x7f020084, 0x7f0200c7, 0x7f0200e4
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6304,7 +6309,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6317,7 +6322,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6330,7 +6335,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#color}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -6341,7 +6346,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6354,7 +6359,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6367,7 +6372,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -6377,7 +6382,7 @@ public final class R {
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6415,7 +6420,7 @@ public final class R {
         0x7f020080, 0x7f020081
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -6425,7 +6430,7 @@ public final class R {
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6437,7 +6442,7 @@ public final class R {
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6454,7 +6459,7 @@ public final class R {
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -6471,7 +6476,7 @@ public final class R {
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -6481,7 +6486,7 @@ public final class R {
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -6554,7 +6559,7 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#font}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6566,7 +6571,7 @@ public final class R {
      */
     public static final int FontFamilyFont_font=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6583,7 +6588,7 @@ public final class R {
      */
     public static final int FontFamilyFont_fontStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -6698,7 +6703,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6710,7 +6715,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6723,7 +6728,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -6733,7 +6738,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7206,7 +7211,7 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7218,7 +7223,7 @@ public final class R {
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -7228,7 +7233,7 @@ public final class R {
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -7238,7 +7243,7 @@ public final class R {
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7259,7 +7264,7 @@ public final class R {
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -7269,7 +7274,7 @@ public final class R {
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -7280,7 +7285,7 @@ public final class R {
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7301,7 +7306,7 @@ public final class R {
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7322,7 +7327,7 @@ public final class R {
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7342,7 +7347,7 @@ public final class R {
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -7471,7 +7476,7 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -7481,7 +7486,7 @@ public final class R {
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7538,7 +7543,7 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -7562,7 +7567,7 @@ public final class R {
         0x7f0200cc
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -7588,7 +7593,7 @@ public final class R {
         0x7f0200a9, 0x7f0200ac
       };
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7601,7 +7606,7 @@ public final class R {
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7774,7 +7779,7 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7786,7 +7791,7 @@ public final class R {
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7798,7 +7803,7 @@ public final class R {
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -7808,7 +7813,7 @@ public final class R {
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7820,7 +7825,7 @@ public final class R {
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -7830,7 +7835,7 @@ public final class R {
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#layout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7842,7 +7847,7 @@ public final class R {
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7854,7 +7859,7 @@ public final class R {
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -7864,7 +7869,7 @@ public final class R {
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7876,7 +7881,7 @@ public final class R {
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7888,7 +7893,7 @@ public final class R {
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7900,7 +7905,7 @@ public final class R {
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7912,7 +7917,7 @@ public final class R {
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8009,7 +8014,7 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8096,7 +8101,7 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#showText}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -8106,7 +8111,7 @@ public final class R {
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
@@ -8116,7 +8121,7 @@ public final class R {
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8129,7 +8134,7 @@ public final class R {
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8142,7 +8147,7 @@ public final class R {
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8154,7 +8159,7 @@ public final class R {
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8167,7 +8172,7 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -8178,7 +8183,7 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8199,7 +8204,7 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#track}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8211,7 +8216,7 @@ public final class R {
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -8222,7 +8227,7 @@ public final class R {
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8427,7 +8432,7 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -8437,7 +8442,7 @@ public final class R {
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8570,7 +8575,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -8587,7 +8592,7 @@ public final class R {
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -8597,7 +8602,7 @@ public final class R {
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8609,7 +8614,7 @@ public final class R {
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8622,7 +8627,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8635,7 +8640,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8648,7 +8653,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8661,7 +8666,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8674,7 +8679,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8687,7 +8692,7 @@ public final class R {
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8699,7 +8704,7 @@ public final class R {
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -8709,7 +8714,7 @@ public final class R {
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8722,7 +8727,7 @@ public final class R {
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -8732,7 +8737,7 @@ public final class R {
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8744,7 +8749,7 @@ public final class R {
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8756,7 +8761,7 @@ public final class R {
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -8766,7 +8771,7 @@ public final class R {
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8778,7 +8783,7 @@ public final class R {
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -8789,7 +8794,7 @@ public final class R {
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
@@ -8799,7 +8804,7 @@ public final class R {
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8812,7 +8817,7 @@ public final class R {
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8825,7 +8830,7 @@ public final class R {
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8838,7 +8843,7 @@ public final class R {
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8851,7 +8856,7 @@ public final class R {
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8864,7 +8869,7 @@ public final class R {
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8877,7 +8882,7 @@ public final class R {
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8889,7 +8894,7 @@ public final class R {
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -8953,7 +8958,7 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8966,7 +8971,7 @@ public final class R {
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8979,7 +8984,7 @@ public final class R {
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#theme}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9024,7 +9029,7 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
@@ -9035,7 +9040,7 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.example.android.bluetoothlegatt.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.example.android.android_ble.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
