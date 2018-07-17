@@ -19,4 +19,8 @@
           android:title="@string/menu_devices"
           android:orderInCategory="100"
           app:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_export"
+        android:title="@string/menu_export"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom|withText"/>
 </menu>

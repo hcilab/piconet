@@ -33,9 +33,10 @@
     <string name="menu_scan">Scan</string>
     <string name="menu_devices">Manage Devices</string>
     <string name="menu_stop">Stop</string>
+    <string name="menu_export">Export DB</string>
     <string name="cancel">Cancel</string>
     <string name="dialog_title">Select device to connect to</string>
-    <string name="title_activity_main">Feedback</string>
+    <string name="title_activity_main">Piconet</string>
 
     <string name="empty_list">No devices currently paired, scan for devices and select one!</string>
 

@@ -15,7 +15,7 @@
  limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.bluetoothlegatt"
+    package="com.unb.hci.android_ble"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -54,21 +54,21 @@
         </activity>
         -->
         <activity
-            android:name="com.example.android.bluetoothlegatt.DeviceControlActivity"
+            android:name="com.unb.hci.android_ble.DeviceControlActivity"
             android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.unb.hci.android_ble.MainActivity"
+            android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.android.bluetoothlegatt.MainActivity"
-            android:label="@string/title_activity_main" >
-        </activity>
 
         <service
-            android:name="com.example.android.bluetoothlegatt.BluetoothLeService"
+            android:name="com.unb.hci.android_ble.BluetoothLeService"
             android:enabled="true" />
     </application>
 
